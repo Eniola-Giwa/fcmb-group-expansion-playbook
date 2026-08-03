@@ -5,12 +5,12 @@
   const page = document.body.dataset.page || "home";
 
   const NAV = [
-    { id: "home", href: "index.html", label: "Home" },
-    { id: "peers", href: "peers.html", label: "Peer Benchmark" },
+    { id: "home", href: "index.html", label: "Why" },
+    { id: "selection", href: "selection.html", label: "Selection Criteria" },
     { id: "stakeholders", href: "stakeholders.html", label: "Stakeholders" },
-    { id: "selection", href: "selection.html", label: "Selection" },
-    { id: "diligence", href: "diligence.html", label: "Diligence" },
-    { id: "integration", href: "integration.html", label: "Integration" }
+    { id: "diligence", href: "diligence.html", label: "Due Diligence" },
+    { id: "integration", href: "integration.html", label: "Integration" },
+    { id: "peers", href: "peers.html", label: "Peer Benchmark" }
   ];
 
   function mountShell() {
@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803f</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803g</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -498,14 +498,22 @@
     const levers = $("#panel-levers");
     if (levers) {
       levers.innerHTML = `
-        <p class="prose">Transformation is a portfolio of bets. Fund the levers that protect the thesis; sequence the rest. Ambition numbers are directional — the operating choices below are what management can actually run.</p>
-        <div class="stat-row">
-          <div class="stat"><strong>2.5×</strong><span>Loan book</span></div>
-          <div class="stat"><strong>2.0×</strong><span>Customers</span></div>
-          <div class="stat"><strong>50%</strong><span>Lower CTS</span></div>
-          <div class="stat"><strong>&gt;20%</strong><span>Target ROE</span></div>
-          <div class="stat"><strong>&lt;5%</strong><span>Norm. CoR</span></div>
+        <p class="prose">${data.integrationIntro || ""}</p>
+        <h3 class="playbook-subhead">Connect into the FCMB ecosystem first</h3>
+        <div class="level-stack">
+          ${(data.ecosystemLayers || [])
+            .map(
+              (l) => `
+            <article class="level-card">
+              <h3>${l.title}</h3>
+              <p class="prose">${l.body}</p>
+              <p class="do"><strong>Decision rule.</strong> ${l.decide}</p>
+            </article>`
+            )
+            .join("")}
         </div>
+        <h3 class="playbook-subhead">Then pull the value levers</h3>
+        <p class="prose">Once the subsidiary is visible and controllable inside Group, run these levers against the IC thesis — sequenced, funded, and owned.</p>
         <div class="level-stack">
           ${data.levers
             .map(
@@ -586,18 +594,17 @@
 
     const horizon = $("#panel-horizon");
     if (horizon) {
+      const steps = data.horizonSteps || [];
       horizon.innerHTML = `
         <p class="prose">${data.horizonNarrative || ""}</p>
         <ol class="horizon-list">
-          <li><strong>2026</strong> — Invest and strengthen: capital, controls, people</li>
-          <li><strong>2027</strong> — Digital platform live</li>
-          <li><strong>2028</strong> — Multi-product scale (2.5+ products per customer)</li>
-          <li><strong>2030</strong> — Regional significance</li>
-          <li><strong>Beyond 2035</strong> — Permanent franchise, measured in decades</li>
+          ${steps
+            .map((s) => `<li><strong>${s.when}</strong> — ${s.what}</li>`)
+            .join("")}
         </ol>
         <div class="callout">
-          <strong>Transformation mandate</strong>
-          Not a turnaround theatre — a reinvention into a technology-enabled, diversified retail platform (Bayport Transformation Blueprint). Use the horizon to discipline dividend debates and CapEx sequencing.
+          <strong>Integration mandate</strong>
+          The goal is not to decorate a standalone trophy asset. It is to make the acquired business a true node in the FCMB Group ecosystem — governed, funded, measured, and coached like one of ours — while remaining locally legitimate.
         </div>`;
     }
 

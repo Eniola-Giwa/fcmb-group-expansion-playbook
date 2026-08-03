@@ -2611,130 +2611,174 @@ window.PLAYBOOK = {
     { id: "g12", label: "Seller TSA covers systems until migration", hard: false, weight: 1 }
   ],
 
+  integrationIntro:
+    "Closing is not the finish line. A newly purchased business only creates Group value when it is deliberately connected to FCMB’s risk standards, capital and funding architecture, technology roadmap, talent model, and customer propositions — while keeping the local franchise legitimate with its regulator and people.",
+
+  ecosystemLayers: [
+    {
+      title: "Governance & reporting spine",
+      body: "Bring the subsidiary onto Group board rhythms, risk appetite, related-party rules, and management information. If Lagos cannot see the book weekly, the entity is not yet in the ecosystem.",
+      decide: "Name the Group executive sponsor and the subsidiary CEO dual-reporting line before day one."
+    },
+    {
+      title: "Risk, credit & compliance standards",
+      body: "Align credit policy, IFRS 9 / local staging discipline, AML/CFT, conduct, and regulatory returns with Group minimums — adapted for host rules, never diluted below them.",
+      decide: "Exceptions require CRO sign-off with an expiry date; permanent local carve-outs are not a strategy."
+    },
+    {
+      title: "Funding, treasury & capital",
+      body: "Connect the franchise to Group treasury visibility, liquidity contingency, and capital planning so growth is funded intentionally — not by whatever wholesale line the seller left behind.",
+      decide: "Funding mix and CAR headroom are integration KPIs, not year-two aspirations."
+    },
+    {
+      title: "Technology & data",
+      body: "Stabilise on a TSA, then migrate toward Group-compatible cores, cyber standards, and data that can feed Group credit and finance engines.",
+      decide: "No open-ended seller IT dependency. Migration milestones sit on the steering-committee scorecard."
+    },
+    {
+      title: "Capability transfer (where the thesis needs it)",
+      body: "Import Group strengths — digital origination, collections craft, SME/consumer product design, UK corridor trade tools — as time-boxed coaching, not permanent occupation.",
+      decide: "Every secondee has an exit date and a local owner who must be fluent by then."
+    },
+    {
+      title: "Brand, customers & culture",
+      body: "Decide what stays local (brand, employer relationships, regulatory face) versus what must feel like FCMB Group (conduct, controls, ambition). Partnership optics must match the org chart.",
+      decide: "If the narrative is ‘African partnership,’ the leadership bench and vendor choices should look like one."
+    }
+  ],
+
   levers: [
     {
-      title: "Commercial growth",
-      body: "Win the right customers faster and deepen wallet share — without buying volume that credit cannot digest.",
-      decide: "Prioritise segments where payroll rails and CDL decisioning create a speed advantage."
+      title: "Commercial growth inside Group appetite",
+      body: "Grow customers and wallet share in segments the IC thesis named — without buying volume that Group credit appetite will reject.",
+      decide: "New segment pushes need Group risk endorsement, not only local sales enthusiasm."
     },
     {
-      title: "Digital lending & CX",
-      body: "Move origination from days to minutes. Experience is a risk control: straight-through journeys reduce error and leakage.",
-      decide: "Pilot in two branches before network roll-out; kill vanity features that do not cut TAT."
+      title: "Digital journeys & customer experience",
+      body: "Compress turnaround times and digitise onboarding so the subsidiary can plug into Group product and partner roadmaps later.",
+      decide: "Pilot in a controlled perimeter before network-wide roll-out."
     },
     {
-      title: "Credit, risk & collections",
-      body: "Import risk-based pricing and predictive collections. The acquisition thesis dies if CoR stays legacy.",
-      decide: "Book the truth on impairments early; then run the recovery playbook weekly."
+      title: "Credit, risk & collections craft",
+      body: "Lift underwriting, staging honesty, and collections effectiveness to Group standard. This is usually where the acquisition thesis lives or dies.",
+      decide: "Book diligence truth early; run recovery and policy alignment on a weekly Group rhythm."
     },
     {
-      title: "Funding & capital",
-      body: "Shift from wholesale dependence toward retail deposits and capital efficiency so ROE can rise without reckless leverage.",
-      decide: "Deposit products are an integration workstream, not a marketing afterthought."
+      title: "Funding & capital into Group architecture",
+      body: "Reduce fragile wholesale dependence; improve deposit quality; make capital planning visible to Group treasury and finance.",
+      decide: "Treat deposit and liquidity workstreams as core integration, not marketing."
     },
     {
-      title: "Operational efficiency",
-      body: "Automation and LEAN remove 300–500 bps of CIR when branch theatre and manual credit are confronted honestly.",
-      decide: "Measure process kills, not slideware ‘synergies’."
+      title: "Operating efficiency & shared services",
+      body: "Remove manual cost where Group shared services or automation can take load — without stripping local market sense.",
+      decide: "Measure process retirement and CIR movement, not synergy slogans."
     },
     {
-      title: "Product diversification",
-      body: "Escape mono-payroll gravity via top-ups, embedded finance, SME adjacencies, payments, and investment — sequenced, not simultaneous.",
-      decide: "One new product only after the digital payroll spine is stable."
+      title: "Product adjacency from the Group shelf",
+      body: "Sequence products the ecosystem already knows how to support — lending variants, payments, savings, SME tools, corridor services — only after the control spine is stable.",
+      decide: "One new product family at a time, with a Group product owner attached."
     }
   ],
 
   phases: {
     1: {
-      title: "Days 1–30 — Stabilisation & control",
+      title: "Days 1–30 — Stabilise & connect",
       narrative:
-        "The first month is about not losing the franchise. Governance, truth on the book, supervisory trust, and people. Growth slogans wait.",
-      focus: "Control risk, retain talent, keep systems on.",
+        "Protect the franchise and plug it into Group visibility. Governance, book truth, supervisor trust, people retention, and a working TSA. Growth theatre waits until control is real.",
+      focus: "Control risk; establish the Group connection.",
       items: [
         {
-          action: "Stand up a joint steering committee with FCMB/CDL secondees",
-          why: "One accountability spine beats parallel crisis meetings."
+          action: "Stand up a joint Group–subsidiary steering committee",
+          why: "One accountability spine; Group sponsor + local CEO in the same room."
         },
         {
-          action: "Attack open regulator findings immediately",
-          why: "Early remediation progress buys patience for the longer transformation."
+          action: "Onboard Group risk, finance, and compliance reporting packs",
+          why: "If the Group cannot see the entity, it is not yet integrated."
         },
         {
-          action: "Book purchase-price impairments; start NPL recovery",
-          why: "Clean the windshield before you drive faster."
+          action: "Clear open host-regulator findings with a funded plan",
+          why: "Supervisory patience is earned in month one."
         },
         {
-          action: "Diagnose core banking; lock the TSA",
-          why: "Day-2 operations depend on seller systems until you migrate."
+          action: "Book purchase-price truth; start asset-quality actions",
+          why: "You cannot transform a balance sheet you refuse to admit."
         },
         {
-          action: "Retain credit & collections cores; deploy change leads",
-          why: "The book walks out on two feet if culture feels like occupation."
+          action: "Lock TSA, retain key operators, deploy change coaches",
+          why: "Day-2 operations and day-30 culture both depend on this."
         }
       ]
     },
     2: {
-      title: "Days 31–60 — Process & digital foundations",
+      title: "Days 31–60 — Prove the operating link",
       narrative:
-        "Prove the thesis in miniature: instant decisioning, visible efficiency, deposit momentum, and a regulator who sees momentum.",
-      focus: "Show the operating model works here — not only in Nigeria.",
+        "Show that FCMB Group standards and capabilities can run inside this market — in miniature. A working pilot, visible efficiency, funding traction, and a regulator who sees momentum.",
+      focus: "Prove the ecosystem model works locally.",
       items: [
         {
-          action: "Pilot instant payroll decisioning (days → minutes)",
-          why: "A live pilot beats a transformation brochure."
+          action: "Pilot a Group-supported digital or credit journey in a limited perimeter",
+          why: "Evidence beats transformation brochures."
         },
         {
-          action: "Identify 300–500 bps CIR reduction opportunities",
-          why: "Efficiency funds the digital build and protects ROE."
+          action: "Map shared-services and CIR opportunities with Group ops",
+          why: "Efficiency should fund the build, not surprise the P&L later."
         },
         {
-          action: "Push digital savings / wallet for deposits",
-          why: "Funding mix is strategy, not treasury trivia."
+          action: "Advance deposit / funding actions under treasury oversight",
+          why: "Funding mix is how the subsidiary becomes part of Group resilience."
         },
         {
-          action: "Submit remediation plan; demonstrate early wins",
-          why: "Supervisory trust compounds — or evaporates."
+          action: "Demonstrate remediation progress to the host supervisor",
+          why: "Trust compounds — or evaporates — on evidence."
         }
       ]
     },
     3: {
-      title: "Days 61–100 — Scale & value creation",
+      title: "Days 61–100 — Embed & scale the thesis",
       narrative:
-        "Only after control and a working pilot do you widen products, migrate the stack, and chase the ROE ambition.",
-      focus: "Scale what worked; institutionalise Group linkages.",
+        "Only after control and a working link to Group do you widen products, advance systems migration, and chase the return path IC approved.",
+      focus: "Embed in the ecosystem; scale what worked.",
       items: [
         {
-          action: "Add sequenced adjacencies (nano top-ups, embedded, SME payroll)",
-          why: "Diversification after the spine is stable — not before."
+          action: "Sequence the first Group-adjacent products with named owners",
+          why: "Adjacency after the spine is stable — not a fireworks show at close."
         },
         {
-          action: "Begin phased core migration; deploy analytics & automated collections",
-          why: "Own the stack; reduce TSA dependency."
+          action: "Begin phased systems migration off seller dependency",
+          why: "Ownership of the stack is ownership of the franchise."
         },
         {
-          action: "Execute capital & ROE uplift actions toward 30%+ in 12–24 months",
-          why: "IC believed a return path — day 100 must show the first gears turning."
+          action: "Lock the 12–24 month value plan into Group budget cycles",
+          why: "Integration without capital planning is theatre."
         },
         {
-          action: "Finalise Group TSA; transfer lending, risk, and CX know-how",
-          why: "Independence with Group standards — the Absa lesson without the drama."
+          action: "Complete knowledge transfer; reduce standing secondees",
+          why: "The ecosystem should strengthen local owners, not replace them forever."
         }
       ]
     }
   },
 
   kpis: [
-    { area: "Impairment", target: "Required book adjustment booked", owner: "CFO", when: "Day 30", why: "Truth before acceleration" },
-    { area: "NPL ratio", target: "<11.5% (from ~12.6%)", owner: "CRO", when: "Weekly", why: "Early de-risking signal" },
-    { area: "NPL coverage", target: ">0.6× (from ~0.2×)", owner: "CRO + CFO", when: "Monthly", why: "Protection against credit losses" },
-    { area: "Digital origination", target: "Live in 2 branches", owner: "CTO + COO", when: "Day 45", why: "Proof of concept" },
-    { area: "Decision time", target: "<4 hours (from multi-day)", owner: "CTO", when: "Weekly", why: "Speed advantage of CDL" },
-    { area: "Digital onboarding", target: ">70% completion", owner: "CTO", when: "Weekly", why: "CX and funnel health" },
-    { area: "CIR", target: "<40% (from ~42.7%)", owner: "COO + CFO", when: "Monthly", why: "Efficiency momentum" },
-    { area: "Automation", target: ">15 core processes", owner: "CTO", when: "Day 90", why: "Scalable operations base" },
-    { area: "Productivity", target: "+20% headcount productivity", owner: "COO", when: "Monthly", why: "Digital tools biting" }
+    { area: "Group MI live", target: "Weekly risk/finance pack received by Group", owner: "CFO + Group Finance", when: "Day 30", why: "Proof the entity is visible in the ecosystem" },
+    { area: "Book truth", target: "Diligence impairments / adjustments booked", owner: "CFO", when: "Day 30", why: "Truth before acceleration" },
+    { area: "Supervisory trust", target: "Remediation plan filed; first milestones met", owner: "CRO / Compliance", when: "Day 45", why: "License legitimacy" },
+    { area: "Key talent", target: "Retention agreements on critical roles", owner: "CHRO / CEO", when: "Day 30", why: "Franchise walks on two feet" },
+    { area: "TSA control", target: "Signed TSA + migration outline approved", owner: "CTO", when: "Day 30", why: "No orphaned operations" },
+    { area: "Operating pilot", target: "One Group-supported journey live in limited sites", owner: "COO + CTO", when: "Day 60", why: "Ecosystem capabilities work locally" },
+    { area: "Decision / TAT", target: "Material cut vs baseline turnaround", owner: "CTO", when: "Weekly from Day 45", why: "Customer and risk control" },
+    { area: "Funding trajectory", target: "Deposit/funding actions on treasury tracker", owner: "Treasury + CFO", when: "Monthly", why: "Balance-sheet belonging to Group" },
+    { area: "Secondee exit plan", target: "Named local owners for each coaching track", owner: "Group Sponsor", when: "Day 100", why: "Integration ≠ permanent occupation" }
+  ],
+
+  horizonSteps: [
+    { when: "Year 0–1", what: "Control, compliance, and Group reporting spine fully live; seller IT dependency declining." },
+    { when: "Year 1–2", what: "Core customer journeys on Group-compatible platforms; funding mix improved; first product adjacencies scaled." },
+    { when: "Year 2–3", what: "Multi-product depth per customer; shared services mature; local leadership running to Group standards without heavy secondees." },
+    { when: "Year 3–5", what: "Subsidiary is a clear earnings and capability node in the FCMB regional portfolio — not a remote outpost." },
+    { when: "Beyond year 5", what: "Permanent franchise logic: dividends and reinvestment debated as owners of an institution, not traders of an asset." }
   ],
 
   horizonNarrative:
-    "FCMB’s Bayport materials frame ownership as a decade-plus commitment: strengthen in 2026, digital platform in 2027, multi-product scale by 2028, regional significance by 2030, and a permanent franchise beyond 2035. Use that horizon in every IC debate about dividends, CapEx, and how hard to push short-term ROE."
+    "Think in ownership decades, not deal cycles. The question for every CapEx, dividend, and product debate is whether the subsidiary is becoming a true node in the FCMB Group ecosystem — governed, funded, measured, and coached like one of ours — while remaining locally legitimate."
 };
