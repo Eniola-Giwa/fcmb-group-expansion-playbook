@@ -7,7 +7,7 @@ Interactive multi-page HTML playbook styled on the [FCMB.com](https://www.fcmb.c
 | Page | Contents (via tabs) |
 |------|---------------------|
 | `index.html` | Home entry |
-| `peers.html` | Seven peer banks + cross-cutting lessons |
+| `peers.html` | Top 20 African banks + cross-cutting lessons |
 | `stakeholders.html` | Regulators, majority, minority, advisors, local expertise, vendors |
 | `selection.html` | Country filters, greenfield/brownfield, entry pathways |
 | `diligence.html` | Benchmarks, minimums, extended streams, go/no-go gate |

@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803e</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803f</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -104,12 +104,11 @@
       <div class="growth-chart" aria-label="Country count over time">
         <div class="growth-chart-head">
           <h4>Countries over time</h4>
-          <span>Hover / tap a bar for the count</span>
         </div>
         <div class="growth-bars" style="height:${chartH}px">
           ${growth
             .map((g) => {
-              const h = Math.max(6, Math.round((g.countries / max) * chartH));
+              const h = Math.max(6, Math.round((g.countries / max) * (chartH - 28)));
               return `
               <div class="growth-bar" title="${g.year}: ${g.countries} countries">
                 <div class="growth-bar-col">
@@ -178,7 +177,7 @@
         (p, i) =>
           `<button class="tab${i === 0 ? " is-active" : ""}" role="tab" aria-selected="${
             i === 0
-          }" data-target="peer-${p.id}">${p.name}</button>`
+          }" data-target="peer-${p.id}"><em>${p.rank || i + 1}</em>${p.name}</button>`
       )
       .join("");
 
@@ -189,7 +188,7 @@
         <div class="panel-card peer-rich">
           <div class="peer-rich-head">
             <div>
-              <h2>${p.name}</h2>
+              <h2><span class="rank-pill">#${p.rank || i + 1}</span> ${p.name}</h2>
               <p class="intro">${p.summary}</p>
               <div class="meta-row">
                 <span class="chip">${p.home}</span>
@@ -229,7 +228,7 @@
     lessonsPanel.innerHTML = `
       <div class="panel-card">
         <h2>Cross-cutting lessons</h2>
-        <p class="intro">Patterns across the seven banks that expanded Africa the hardest.</p>
+        <p class="intro">Patterns across Africa’s top 20 banking groups — from pan-African networks to domestic giants.</p>
         <div class="grid-2">
           ${data.peerLessons
             .map((l) => `<div class="mini-card"><h4>${l.title}</h4><p>${l.body}</p></div>`)

@@ -1,494 +1,2183 @@
 window.PLAYBOOK = {
   peers: [
-    {
-      id: "ecobank",
-      name: "Ecobank",
-      home: "Togo / ECOWAS",
-      reach: "~33–35 African markets (peak ~36)",
-      mode: "Greenfield-heavy, then selective M&A",
-      firstRegion: "West Africa (ECOWAS / UEMOA)",
-      summary:
-        "Purpose-built pan-African bank. Grew country-by-country from Lomé, saturating West Africa before leaping into Central and East Africa.",
-      growth: [
-        { year: 1988, countries: 1 },
-        { year: 1995, countries: 5 },
-        { year: 2000, countries: 11 },
-        { year: 2005, countries: 15 },
-        { year: 2010, countries: 30 },
-        { year: 2011, countries: 35 },
-        { year: 2015, countries: 36 },
-        { year: 2025, countries: 34 }
-      ],
-      timeline: [
-        {
-          year: "1985–88",
-          countries: 1,
-          region: "West Africa",
-          entry: "Greenfield / charter",
-          markets: ["Togo (HQ)"],
-          event: "ETI founded with ECOWAS mandate; first operating bank in Lomé.",
-          advisors: { financial: "Founding ECOWAS / private African sponsors", legal: "Togolese HQ agreement counsel", other: "Development-finance oriented founding coalition" },
-          vendors: ["Local core banking build", "Manual branch model"]
+  {
+    "rank": 1,
+    "id": "standard",
+    "name": "Standard Bank",
+    "home": "South Africa",
+    "reach": "~20 African markets",
+    "mode": "Acquisition-led (Stanbic)",
+    "firstRegion": "Southern & East Africa (via Grindlays Africa)",
+    "summary": "Largest African bank by assets. Bought a ready African network from ANZ Grindlays, then deepened Stanbic and later locked in China–Africa capital via ICBC.",
+    "growth": [
+      {
+        "year": 1992,
+        "countries": 1
+      },
+      {
+        "year": 1993,
+        "countries": 8
+      },
+      {
+        "year": 2000,
+        "countries": 14
+      },
+      {
+        "year": 2007,
+        "countries": 17
+      },
+      {
+        "year": 2015,
+        "countries": 20
+      },
+      {
+        "year": 2024,
+        "countries": 20
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1993",
+        "countries": 8,
+        "region": "Southern & East Africa",
+        "entry": "Network acquisition",
+        "markets": [
+          "Zimbabwe",
+          "Zambia",
+          "Kenya",
+          "Botswana",
+          "Uganda",
+          "Zaire/DRC",
+          "stakes in Nigeria & Ghana"
+        ],
+        "event": "Stanbic buys ANZ Grindlays’ African operations — the defining continental leap.",
+        "advisors": {
+          "financial": "Standard Bank / Stanbic corporate finance (buyer); ANZ sell-side",
+          "legal": "Cross-border counsel on African bank transfers",
+          "other": "Classic seller-exit of a colonial-era network"
         },
-        {
-          year: "1989–95",
-          countries: 5,
-          region: "West Africa",
-          entry: "Serial greenfields",
-          markets: ["Nigeria", "Côte d'Ivoire", "Ghana", "Benin"],
-          event: "Rapid ECOWAS fill-in; UEMOA currency zone used to scale operations.",
-          advisors: { financial: "In-house ETI corporate development", legal: "Host-country licensing counsel (each market)", other: "Not a classic FA-led M&A wave — license + capital raises" },
-          vendors: ["Branch-led distribution", "Correspondent banking rails"]
+        "vendors": [
+          "Inherited Grindlays systems by market",
+          "Stanbic brand overlay"
+        ]
+      },
+      {
+        "year": "1990s–2000s",
+        "countries": 14,
+        "region": "SADC + East Africa",
+        "entry": "Bolt-ons + organic",
+        "markets": [
+          "Uganda commercial bank merges",
+          "Deeper Kenya / Zambia / Botswana"
+        ],
+        "event": "Stanbic brand consolidates; selective privatisations and local mergers.",
+        "advisors": {
+          "financial": "Standard Bank CIB / local FAs on privatisations",
+          "legal": "Host regulators + privatisation counsel",
+          "other": "Government sell-downs as entry route"
         },
-        {
-          year: "2001–07",
-          countries: 18,
-          region: "Central → East Africa",
-          entry: "Greenfield + selective buy",
-          markets: ["Cameroon", "Chad", "Rwanda", "CAR", "Kenya", "DRC", "Uganda", "Zambia"],
-          event: "‘Middle Africa’ push beyond West Africa after home region saturation.",
-          advisors: { financial: "ETI / EDC investment banking arm", legal: "Multi-jurisdiction local counsel panels", other: "Capital markets via 2006 triple listing (NGX, GSE, BRVM)" },
-          vendors: ["eProcess shared services (group IT)", "Regional stockbrokerage units"]
+        "vendors": [
+          "Stanbic core standardisation",
+          "Corporate & investment banking stack"
+        ]
+      },
+      {
+        "year": "2007",
+        "countries": 17,
+        "region": "China–Africa corridor (capital)",
+        "entry": "Strategic equity",
+        "markets": [
+          "ICBC ~20% of Standard Bank Group (~$5.5bn)"
+        ],
+        "event": "Largest China→Africa bank investment of its era; funds corridor ambition.",
+        "advisors": {
+          "financial": "Goldman Sachs (ICBC); Standard Bank CIB (self-advised / coordinated)",
+          "legal": "SA Reserve Bank / CBRC approval counsel",
+          "other": "Board seats + cooperation agreements"
         },
-        {
-          year: "2008",
-          countries: 25,
-          region: "Southern Africa corridor",
-          entry: "Alliance",
-          markets: ["Nedbank alliance (SADC access)"],
-          event: "Nedbank–Ecobank alliance for reciprocal network access without full ownership.",
-          advisors: { financial: "In-house strategy teams (both groups)", legal: "Alliance / cooperation counsel", other: "Partnership model vs acquisition" },
-          vendors: ["Cross-referral corporate banking", "Shared client coverage model"]
+        "vendors": [
+          "Trade finance & commodity desks",
+          "ICBC–SB client referral platforms"
+        ]
+      },
+      {
+        "year": "2010s–20s",
+        "countries": 20,
+        "region": "Selective Africa + global hubs",
+        "entry": "Deepen, not spray",
+        "markets": [
+          "Focus markets across SADC/EAC",
+          "London / global markets for Africa flows"
+        ],
+        "event": "Fewer new flags; more CIB, markets, and China–Africa trade capture.",
+        "advisors": {
+          "financial": "Standard Bank CIB as house FA on Africa deals",
+          "legal": "Panel of Magic Circle / SA firms by deal",
+          "other": "ICBC as strategic partner, not operator"
         },
-        {
-          year: "2011",
-          countries: 35,
-          region: "West Africa deepening",
-          entry: "Landmark acquisitions",
-          markets: ["Oceanic Bank (Nigeria)", "The Trust Bank (Ghana)", "Zimbabwe entry", "Cape Verde"],
-          event: "Scale deals in Nigeria & Ghana; footprint peaks near 35 countries of presence.",
-          advisors: { financial: "ETI M&A / EDC; local Nigerian & Ghanaian FAs on Oceanic & TTB", legal: "Host counsel for CBN / BoG change-of-control", other: "Integration led by group management, not PE sponsors" },
-          vendors: ["eProcess platform consolidation", "Branch network integration", "Oceanic / TTB legacy cores during TSA"]
+        "vendors": [
+          "Group risk & markets platforms",
+          "Africa trading infrastructure"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand when a quality franchise/network is for sale",
+      "Strategic partners (e.g. ICBC) can fund corridor ambition",
+      "Balance sheet scale buys patience through cycles"
+    ]
+  },
+  {
+    "rank": 2,
+    "id": "nbe",
+    "name": "National Bank of Egypt",
+    "home": "Egypt",
+    "reach": "Egypt-dominant (+ selective international)",
+    "mode": "Home-market scale; limited pan-African flags",
+    "firstRegion": "Egypt / North Africa",
+    "summary": "Africa’s #2 by Tier-1 capital in recent African Business rankings — a balance-sheet giant whose expansion story is domestic depth and selective international corridors, not Ecobank-style flag collecting.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2010,
+        "countries": 1
+      },
+      {
+        "year": 2018,
+        "countries": 2
+      },
+      {
+        "year": 2024,
+        "countries": 3
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1898–2000s",
+        "countries": 1,
+        "region": "Egypt",
+        "entry": "State champion build",
+        "markets": [
+          "Egypt"
+        ],
+        "event": "National Bank of Egypt grows as the state’s flagship balance sheet — continental rank via domestic scale.",
+        "advisors": {
+          "financial": "Ministry of Finance / state ownership framework",
+          "legal": "CBE regulatory counsel",
+          "other": "Public-sector mandate shapes growth more than M&A FAs"
         },
-        {
-          year: "2015–25",
-          countries: 34,
-          region: "Pan-African consolidation",
-          entry: "Deepen + prune",
-          markets: ["One Bank model", "Select exits (e.g. Mozambique 2025)"],
-          event: "Unify operating model; prune subscale markets; keep ~33–34 African banking markets.",
-          advisors: { financial: "Group strategy / transformation offices", legal: "Ongoing regulatory counsel network", other: "Digital & payments product partners" },
-          vendors: ["Unified mobile / Omni platform", "eProcess centralised ops", "Payment rails across affiliates"]
-        }
-      ],
-      advice: [
-        "Expand when regional trade blocs create natural corridors",
-        "Central holding + local banks works if governance is strong",
-        "Breadth without depth creates subscale subsidiaries — watch economics"
-      ]
-    },
-    {
-      id: "standard",
-      name: "Standard Bank",
-      home: "South Africa",
-      reach: "~20 African markets",
-      mode: "Acquisition-led (Stanbic)",
-      firstRegion: "Southern & East Africa (via Grindlays Africa)",
-      summary:
-        "Largest African bank by assets. Bought a ready African network from ANZ Grindlays, then deepened Stanbic and later locked in China–Africa capital via ICBC.",
-      growth: [
-        { year: 1992, countries: 1 },
-        { year: 1993, countries: 8 },
-        { year: 2000, countries: 14 },
-        { year: 2007, countries: 17 },
-        { year: 2015, countries: 20 },
-        { year: 2024, countries: 20 }
-      ],
-      timeline: [
-        {
-          year: "1993",
-          countries: 8,
-          region: "Southern & East Africa",
-          entry: "Network acquisition",
-          markets: ["Zimbabwe", "Zambia", "Kenya", "Botswana", "Uganda", "Zaire/DRC", "stakes in Nigeria & Ghana"],
-          event: "Stanbic buys ANZ Grindlays’ African operations — the defining continental leap.",
-          advisors: { financial: "Standard Bank / Stanbic corporate finance (buyer); ANZ sell-side", legal: "Cross-border counsel on African bank transfers", other: "Classic seller-exit of a colonial-era network" },
-          vendors: ["Inherited Grindlays systems by market", "Stanbic brand overlay"]
+        "vendors": [
+          "Core banking modernisation programmes",
+          "Government payment rails"
+        ]
+      },
+      {
+        "year": "2010s",
+        "countries": 1,
+        "region": "North Africa",
+        "entry": "Domestic deepening",
+        "markets": [
+          "Retail + corporate Egypt"
+        ],
+        "event": "Capital and asset growth keep NBE near the top of Africa rankings without a multi-country African network.",
+        "advisors": {
+          "financial": "In-house strategy / capital markets teams",
+          "legal": "CBE & capital markets counsel",
+          "other": "International bond / capital advisors on large raises"
         },
-        {
-          year: "1990s–2000s",
-          countries: 14,
-          region: "SADC + East Africa",
-          entry: "Bolt-ons + organic",
-          markets: ["Uganda commercial bank merges", "Deeper Kenya / Zambia / Botswana"],
-          event: "Stanbic brand consolidates; selective privatisations and local mergers.",
-          advisors: { financial: "Standard Bank CIB / local FAs on privatisations", legal: "Host regulators + privatisation counsel", other: "Government sell-downs as entry route" },
-          vendors: ["Stanbic core standardisation", "Corporate & investment banking stack"]
+        "vendors": [
+          "Card & payments processors",
+          "Trade finance platforms"
+        ]
+      },
+      {
+        "year": "2018–24",
+        "countries": 3,
+        "region": "Selective international",
+        "entry": "Corridor offices / affiliates",
+        "markets": [
+          "UAE / international presence",
+          "Trade corridors"
+        ],
+        "event": "Selective international footprint to serve Egyptian trade and diaspora — not a pan-African retail roll-up.",
+        "advisors": {
+          "financial": "International branch/subsidiary advisors by host market",
+          "legal": "Host licensing counsel",
+          "other": "Trade-corridor logic over geographic vanity"
         },
-        {
-          year: "2007",
-          countries: 17,
-          region: "China–Africa corridor (capital)",
-          entry: "Strategic equity",
-          markets: ["ICBC ~20% of Standard Bank Group (~$5.5bn)"],
-          event: "Largest China→Africa bank investment of its era; funds corridor ambition.",
-          advisors: { financial: "Goldman Sachs (ICBC); Standard Bank CIB (self-advised / coordinated)", legal: "SA Reserve Bank / CBRC approval counsel", other: "Board seats + cooperation agreements" },
-          vendors: ["Trade finance & commodity desks", "ICBC–SB client referral platforms"]
+        "vendors": [
+          "Correspondent banking network",
+          "Trade & remittance partners"
+        ]
+      }
+    ],
+    "advice": [
+      "Scale at home can outrank pan-African breadth on capital tables",
+      "Corridor offices ≠ subsidiary networks — be honest about the model",
+      "State champions expand when trade policy demands it, not when maps look empty"
+    ]
+  },
+  {
+    "rank": 3,
+    "id": "attijari",
+    "name": "Attijariwafa",
+    "home": "Morocco",
+    "reach": "~15 African markets",
+    "mode": "Brownfield / network acquisitions",
+    "firstRegion": "Maghreb, then francophone West & Central Africa",
+    "summary": "Moroccan champion that bought French exit portfolios — especially Crédit Agricole’s five-bank African network — to vault into WAEMU and CEMAC.",
+    "growth": [
+      {
+        "year": 2004,
+        "countries": 1
+      },
+      {
+        "year": 2006,
+        "countries": 3
+      },
+      {
+        "year": 2008,
+        "countries": 5
+      },
+      {
+        "year": 2009,
+        "countries": 10
+      },
+      {
+        "year": 2015,
+        "countries": 13
+      },
+      {
+        "year": 2018,
+        "countries": 15
+      },
+      {
+        "year": 2024,
+        "countries": 15
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2004–07",
+        "countries": 4,
+        "region": "Maghreb + WAEMU beachheads",
+        "entry": "Domestic merger + early Africa buys",
+        "markets": [
+          "Morocco (BCM+Wafa)",
+          "Tunisia",
+          "Senegal (CBAO path)",
+          "Mali (BIM)"
+        ],
+        "event": "Home merger creates Attijariwafa; first francophone Africa beachheads.",
+        "advisors": {
+          "financial": "Moroccan corporate finance advisors on BCM–Wafa merger",
+          "legal": "Moroccan & OHADA counsel",
+          "other": "Santander / European minorities historically on register"
         },
-        {
-          year: "2010s–20s",
-          countries: 20,
-          region: "Selective Africa + global hubs",
-          entry: "Deepen, not spray",
-          markets: ["Focus markets across SADC/EAC", "London / global markets for Africa flows"],
-          event: "Fewer new flags; more CIB, markets, and China–Africa trade capture.",
-          advisors: { financial: "Standard Bank CIB as house FA on Africa deals", legal: "Panel of Magic Circle / SA firms by deal", other: "ICBC as strategic partner, not operator" },
-          vendors: ["Group risk & markets platforms", "Africa trading infrastructure"]
-        }
-      ],
-      advice: [
-        "Expand when a quality franchise/network is for sale",
-        "Strategic partners (e.g. ICBC) can fund corridor ambition",
-        "Balance sheet scale buys patience through cycles"
-      ]
-    },
-    {
-      id: "uba",
-      name: "UBA",
-      home: "Nigeria",
-      reach: "20 African markets (+ global hubs)",
-      mode: "Rapid multi-country push",
-      firstRegion: "West Africa (Ghana first), then Central & East",
-      summary:
-        "Post-2005 consolidation capital funded a sprint across Africa — Ghana first, then a 2007–11 wave that filled ~19 African markets before consolidation.",
-      growth: [
-        { year: 2004, countries: 1 },
-        { year: 2005, countries: 2 },
-        { year: 2007, countries: 3 },
-        { year: 2008, countries: 10 },
-        { year: 2009, countries: 13 },
-        { year: 2010, countries: 16 },
-        { year: 2011, countries: 19 },
-        { year: 2024, countries: 20 }
-      ],
-      timeline: [
-        {
-          year: "2005–06",
-          countries: 2,
-          region: "Nigeria (home scale)",
-          entry: "Domestic mega-merger",
-          markets: ["STB + UBA merger", "Continental Trust", "Trade Bank"],
-          event: "Nigeria consolidation creates surplus capital and management ambition for Africa.",
-          advisors: { financial: "Domestic Nigerian FAs on STB–UBA merger", legal: "NSE / CBN merger counsel", other: "McKinsey later engaged to stress-test pan-African strategy" },
-          vendors: ["Merged Nigerian core stacks", "UBA Capital UK (Afrinvest)"]
+        "vendors": [
+          "Wafa product factories (consumer finance)",
+          "Moroccan operating model export"
+        ]
+      },
+      {
+        "year": "2008–09",
+        "countries": 10,
+        "region": "West & Central Africa (francophone)",
+        "entry": "Landmark network swap/acquisition",
+        "markets": [
+          "Congo",
+          "Côte d'Ivoire (SIB)",
+          "Cameroon (SCB)",
+          "Gabon (UGB)",
+          "Senegal (Crédit du Sénégal)"
+        ],
+        "event": "Buys Crédit Agricole’s five African retail banks (~€250m) — instant multi-country franchise.",
+        "advisors": {
+          "financial": "Attijariwafa in-house deal team (Ismail Douiri-era execution); Crédit Agricole sell-side",
+          "legal": "French & OHADA/CEMAC counsel on multi-country SPA",
+          "other": "Structured as strategic asset swap with CA (Crédit du Maroc / Wafasalaf pieces)"
         },
-        {
-          year: "2005",
-          countries: 2,
-          region: "West Africa",
-          entry: "First African subsidiary",
-          markets: ["Ghana"],
-          event: "Ghana is the first continental beachhead — English-law, familiar regulator peers.",
-          advisors: { financial: "UBA Group strategy / corporate development", legal: "BoG licensing counsel", other: "Greenfield-style subsidiary build" },
-          vendors: ["Group technology export", "Correspondent links via UBA America"]
+        "vendors": [
+          "Inherited CA cores during transition",
+          "Rebrand to Attijariwafa",
+          "Wafasalaf consumer-credit playbook"
+        ]
+      },
+      {
+        "year": "2010–18",
+        "countries": 15,
+        "region": "North + West + Central + Egypt",
+        "entry": "Bolt-ons + Egypt",
+        "markets": [
+          "Mauritania",
+          "Burkina Faso",
+          "Guinea-Bissau",
+          "Egypt acquisition"
+        ],
+        "event": "Deepens francophone belt; Egypt adds North Africa scale and branch density leadership narrative.",
+        "advisors": {
+          "financial": "Group BDIF / international development teams",
+          "legal": "Local counsel panels",
+          "other": "Focus on becoming #1–#3 locally, not boutique flags"
         },
-        {
-          year: "2007–08",
-          countries: 10,
-          region: "West & Central Africa (+ Uganda)",
-          entry: "License wave",
-          markets: ["Cameroon", "Burkina Faso", "Chad", "Côte d'Ivoire", "Liberia", "Senegal", "Sierra Leone", "Uganda"],
-          event: "Explosive year: seven+ markets in 2008 alone after Cameroon 2007.",
-          advisors: { financial: "In-house Africa expansion PMO; strategy support (McKinsey cited on growth revalidation)", legal: "Local licensing counsel per CEMAC / UEMOA / EAC market", other: "Mostly greenfield licenses, not landmark bank buys" },
-          vendors: ["Standardised UBA branch/IT kit", "Group risk templates rolled out country-by-country"]
+        "vendors": [
+          "Attijariwafa corporate & trade platforms",
+          "Local partner / consultant networks for FDI clients"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand when a foreign seller exits a whole regional network",
+      "Language & legal affinity (OHADA / francophone) lowers integration risk",
+      "Become systemically important locally — not a boutique outpost"
+    ]
+  },
+  {
+    "rank": 4,
+    "id": "firstrand",
+    "name": "FirstRand",
+    "home": "South Africa",
+    "reach": "~8–10 African markets (FNB / RMB)",
+    "mode": "Selective SADC / East Africa + product-led",
+    "firstRegion": "Southern Africa (SADC)",
+    "summary": "FirstRand’s African story is disciplined adjacency — FNB and RMB deepen markets where the group can win on digital and markets, rather than racing Ecobank on country count.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2008,
+        "countries": 5
+      },
+      {
+        "year": 2015,
+        "countries": 7
+      },
+      {
+        "year": 2024,
+        "countries": 9
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1998–2005",
+        "countries": 1,
+        "region": "South Africa",
+        "entry": "Domestic franchise build",
+        "markets": [
+          "FNB",
+          "RMB",
+          "WesBank"
+        ],
+        "event": "Portfolio of brands creates a SA powerhouse before careful Africa steps.",
+        "advisors": {
+          "financial": "In-house FirstRand strategy",
+          "legal": "SARB counsel",
+          "other": "Brand portfolio architecture as moat"
         },
-        {
-          year: "2009–11",
-          countries: 19,
-          region: "East, Southern & Central Africa",
-          entry: "License completion wave",
-          markets: ["Gabon", "Kenya", "Tanzania", "Guinea", "Mozambique", "Zambia", "Congo-Brazzaville", "DRC"],
-          event: "Major expansion phase declared complete at ~19 African operations; shift to consolidation.",
-          advisors: { financial: "Group corporate development", legal: "Multi-country regulatory counsel", other: "Limited named bulge-bracket FA — speed favoured in-house execution" },
-          vendors: ["UBA Group shared services", "Trade & remittance corridors via US/UK/France hubs"]
+        "vendors": [
+          "FNB digital stack",
+          "RMB markets platforms"
+        ]
+      },
+      {
+        "year": "2000s–10s",
+        "countries": 5,
+        "region": "SADC",
+        "entry": "Subsidiary / greenfield mix",
+        "markets": [
+          "Namibia",
+          "Botswana",
+          "Eswatini",
+          "Lesotho"
+        ],
+        "event": "Natural SADC adjacency — currency and client overlap with SA corporates.",
+        "advisors": {
+          "financial": "FirstRand corporate development",
+          "legal": "Host central bank counsel",
+          "other": "Client-follow logic (SA corporates into neighbours)"
         },
-        {
-          year: "2012–24",
-          countries: 20,
-          region: "Selective adds + global hubs",
-          entry: "Fill-ins",
-          markets: ["Benin", "Mali", "UK", "Dubai", "France"],
-          event: "Fewer new African flags; deepen existing markets; add global trade hubs.",
-          advisors: { financial: "UBA Capital / group treasury on hub builds", legal: "Host-country branch/subsidiary counsel", other: "Focus on revenue share outside Nigeria (>50% in recent reviews)" },
-          vendors: ["Digital / agency banking", "Cross-border payment platforms"]
-        }
-      ],
-      advice: [
-        "Expand when home-market capital rules fund outward growth",
-        "Many flags ≠ many franchises — aim for deposit share that matters",
-        "Use diaspora and trade corridors as demand anchors"
-      ]
-    },
-    {
-      id: "attijari",
-      name: "Attijariwafa",
-      home: "Morocco",
-      reach: "~15 African markets",
-      mode: "Brownfield / network acquisitions",
-      firstRegion: "Maghreb, then francophone West & Central Africa",
-      summary:
-        "Moroccan champion that bought French exit portfolios — especially Crédit Agricole’s five-bank African network — to vault into WAEMU and CEMAC.",
-      growth: [
-        { year: 2004, countries: 1 },
-        { year: 2006, countries: 3 },
-        { year: 2008, countries: 5 },
-        { year: 2009, countries: 10 },
-        { year: 2015, countries: 13 },
-        { year: 2018, countries: 15 },
-        { year: 2024, countries: 15 }
-      ],
-      timeline: [
-        {
-          year: "2004–07",
-          countries: 4,
-          region: "Maghreb + WAEMU beachheads",
-          entry: "Domestic merger + early Africa buys",
-          markets: ["Morocco (BCM+Wafa)", "Tunisia", "Senegal (CBAO path)", "Mali (BIM)"],
-          event: "Home merger creates Attijariwafa; first francophone Africa beachheads.",
-          advisors: { financial: "Moroccan corporate finance advisors on BCM–Wafa merger", legal: "Moroccan & OHADA counsel", other: "Santander / European minorities historically on register" },
-          vendors: ["Wafa product factories (consumer finance)", "Moroccan operating model export"]
+        "vendors": [
+          "FNB app/digital export",
+          "Shared group risk systems"
+        ]
+      },
+      {
+        "year": "2010s–20s",
+        "countries": 9,
+        "region": "East & West Africa selective",
+        "entry": "Licensed subsidiaries",
+        "markets": [
+          "Ghana",
+          "Tanzania",
+          "Nigeria (RMB/presence evolution)",
+          "Zambia"
+        ],
+        "event": "Selective markets where digital retail or RMB wholesale can earn returns — exits or reshaping when thesis fails.",
+        "advisors": {
+          "financial": "Deal-by-deal FAs when acquiring",
+          "legal": "Multi-country licensing counsel",
+          "other": "Willingness to reshape footprint vs flag-collect"
         },
-        {
-          year: "2008–09",
-          countries: 10,
-          region: "West & Central Africa (francophone)",
-          entry: "Landmark network swap/acquisition",
-          markets: ["Congo", "Côte d'Ivoire (SIB)", "Cameroon (SCB)", "Gabon (UGB)", "Senegal (Crédit du Sénégal)"],
-          event: "Buys Crédit Agricole’s five African retail banks (~€250m) — instant multi-country franchise.",
-          advisors: { financial: "Attijariwafa in-house deal team (Ismail Douiri-era execution); Crédit Agricole sell-side", legal: "French & OHADA/CEMAC counsel on multi-country SPA", other: "Structured as strategic asset swap with CA (Crédit du Maroc / Wafasalaf pieces)" },
-          vendors: ["Inherited CA cores during transition", "Rebrand to Attijariwafa", "Wafasalaf consumer-credit playbook"]
+        "vendors": [
+          "FNB digital channels",
+          "RMB corporate/markets stack"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand only where a brand (FNB/RMB) has a right to win",
+      "SADC adjacency is the safest first region for SA groups",
+      "Be willing to reshape or exit — country count is not the KPI"
+    ]
+  },
+  {
+    "rank": 5,
+    "id": "absa",
+    "name": "Absa",
+    "home": "South Africa",
+    "reach": "12 African markets",
+    "mode": "Inherited network + separation",
+    "firstRegion": "Southern Africa (Absa/Barclays SA), then rest-of-Africa Barclays franchise",
+    "summary": "Did not ‘expand’ by planting flags in the 2010s — it inherited Barclays Africa’s 12-country franchise, then spent 2016–20 separating brand, IT, and governance.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 9
+      },
+      {
+        "year": 2013,
+        "countries": 12
+      },
+      {
+        "year": 2016,
+        "countries": 12
+      },
+      {
+        "year": 2018,
+        "countries": 12
+      },
+      {
+        "year": 2020,
+        "countries": 12
+      },
+      {
+        "year": 2024,
+        "countries": 12
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2005",
+        "countries": 9,
+        "region": "Southern Africa core",
+        "entry": "Barclays acquires Absa",
+        "markets": [
+          "South Africa platform under Barclays"
+        ],
+        "event": "Barclays takes control of Absa — seed of Barclays Africa.",
+        "advisors": {
+          "financial": "Bulge-bracket FAs on Barclays–Absa (era deal)",
+          "legal": "SARB / UK regulatory counsel",
+          "other": "Integration of SA franchise into Barclays Africa"
         },
-        {
-          year: "2010–18",
-          countries: 15,
-          region: "North + West + Central + Egypt",
-          entry: "Bolt-ons + Egypt",
-          markets: ["Mauritania", "Burkina Faso", "Guinea-Bissau", "Egypt acquisition"],
-          event: "Deepens francophone belt; Egypt adds North Africa scale and branch density leadership narrative.",
-          advisors: { financial: "Group BDIF / international development teams", legal: "Local counsel panels", other: "Focus on becoming #1–#3 locally, not boutique flags" },
-          vendors: ["Attijariwafa corporate & trade platforms", "Local partner / consultant networks for FDI clients"]
-        }
-      ],
-      advice: [
-        "Expand when a foreign seller exits a whole regional network",
-        "Language & legal affinity (OHADA / francophone) lowers integration risk",
-        "Become systemically important locally — not a boutique outpost"
-      ]
-    },
-    {
-      id: "boa",
-      name: "Bank of Africa",
-      home: "Morocco (BMCE) / BOA network",
-      reach: "~18–20 countries",
-      mode: "Buy the pan-African brand",
-      firstRegion: "West Africa (Mali-origin BOA), then East Africa & Indian Ocean",
-      summary:
-        "BOA was born pan-African in Mali; BMCE bought into the holding (2008) and took control (~2010), marrying Moroccan capital to an existing multi-region network.",
-      growth: [
-        { year: 1982, countries: 1 },
-        { year: 1990, countries: 2 },
-        { year: 2001, countries: 6 },
-        { year: 2008, countries: 15 },
-        { year: 2010, countries: 17 },
-        { year: 2015, countries: 18 },
-        { year: 2023, countries: 19 }
-      ],
-      timeline: [
-        {
-          year: "1982–2001",
-          countries: 6,
-          region: "West Africa first",
-          entry: "Greenfield network build",
-          markets: ["Mali", "Benin", "Burkina Faso", "Senegal", "+ early partners"],
-          event: "Bank of Africa identity spreads across WAEMU before Moroccan ownership.",
-          advisors: { financial: "BOA founding shareholders / DFIs historically on cap table", legal: "OHADA licensing counsel", other: "Development-finance flavoured shareholder mix" },
-          vendors: ["BOA holding technical subsidiaries", "Shared IT processing units"]
+        "vendors": [
+          "Barclays group technology standards",
+          "Absa domestic stack"
+        ]
+      },
+      {
+        "year": "2000s–2013",
+        "countries": 12,
+        "region": "East, Southern & West Africa",
+        "entry": "Barclays Africa network assembly",
+        "markets": [
+          "Botswana",
+          "Kenya",
+          "Ghana",
+          "Mauritius",
+          "Mozambique",
+          "Seychelles",
+          "Tanzania",
+          "Uganda",
+          "Zambia",
+          "+ SA"
+        ],
+        "event": "Rest-of-Africa subsidiaries brought under Barclays Africa Group umbrella.",
+        "advisors": {
+          "financial": "Barclays / Absa CIB internal",
+          "legal": "Multi-country regulatory counsel",
+          "other": "Network largely inherited from Barclays colonial/post-colonial footprint"
         },
-        {
-          year: "2008",
-          countries: 15,
-          region: "Already multi-region",
-          entry: "Strategic stake",
-          markets: ["BMCE acquires ~35% of BOA Holding (then ~15–18 country network)"],
-          event: "Moroccan capital enters; BOA already spans West, East, Indian Ocean.",
-          advisors: { financial: "BMCE Capital / group finance; BOA Holding sell-side process", legal: "Luxembourg holding + Moroccan counsel", other: "Stake built toward control rather than one-shot 100% buyout" },
-          vendors: ["BOA Group IT & processing companies", "BMCE European hubs (London/Paris) for Africa flows"]
+        "vendors": [
+          "Barclays brand & systems",
+          "Group risk & compliance stack"
+        ]
+      },
+      {
+        "year": "2016–17",
+        "countries": 12,
+        "region": "Pan-African (separation)",
+        "entry": "Parent sell-down + TSA",
+        "markets": [
+          "Barclays PLC cuts to minority; separation terms agreed"
+        ],
+        "event": "Barclays contributes ~R12.6bn toward separation; TSA governs transitional services.",
+        "advisors": {
+          "financial": "Barclays & Absa as global coordinators on separation financing/process",
+          "legal": "Separation agreements counsel (SA + UK)",
+          "other": "SARB / Finance Ministry approvals central"
         },
-        {
-          year: "2010–15",
-          countries: 18,
-          region: "East Africa, DRC, Indian Ocean",
-          entry: "Control + bolt-ons",
-          markets: ["DRC", "Djibouti", "Rwanda", "France subsidiary", "stake raised to ~73–75%"],
-          event: "BMCE becomes majority owner; rebrand path to BMCE Bank of Africa / BANK OF AFRICA.",
-          advisors: { financial: "BMCE Capital advisory", legal: "Multi-country change-of-control counsel", other: "Preserve BOA brand equity in host markets" },
-          vendors: ["Group technical support subsidiaries", "Trade desks via BMCE International"]
+        "vendors": [
+          "Barclays TSA (IT, brand, ops)",
+          "Large-scale data/system migration programme (~270 projects)"
+        ]
+      },
+      {
+        "year": "2018–20",
+        "countries": 12,
+        "region": "Same 12 — rebranded",
+        "entry": "Transformation, not new countries",
+        "markets": [
+          "Absa Group rename",
+          "Absa rebrand across Africa"
+        ],
+        "event": "Country count flat; value is independence, brand, and systems ownership.",
+        "advisors": {
+          "financial": "Absa Group programme office",
+          "legal": "Brand / trademark transitional licences",
+          "other": "Accenture-class SI partners typically on migrations (programme vendors)"
         },
-        {
-          year: "2015–23",
-          countries: 19,
-          region: "WAEMU + EAC + Indian Ocean + Central",
-          entry: "Deepen network",
-          markets: ["Togo", "Ethiopia (rep)", "Shanghai", "full BANK OF AFRICA identity"],
-          event: "Footprint stabilises ~18–20 countries with Moroccan parent fully African-branded.",
-          advisors: { financial: "BANK OF AFRICA / BMCE Capital", legal: "Ongoing host counsel", other: "DFIs remain minority partners in several subsidiaries" },
-          vendors: ["Two IT processing/support companies", "Investment company + regional holdings"]
-        }
-      ],
-      advice: [
-        "Expand by acquiring a multi-country brand, not one country at a time",
-        "Holding-company architecture matters for capital and oversight",
-        "Preserve local brand equity while upgrading group standards"
-      ]
-    },
-    {
-      id: "absa",
-      name: "Absa",
-      home: "South Africa",
-      reach: "12 African markets",
-      mode: "Inherited network + separation",
-      firstRegion: "Southern Africa (Absa/Barclays SA), then rest-of-Africa Barclays franchise",
-      summary:
-        "Did not ‘expand’ by planting flags in the 2010s — it inherited Barclays Africa’s 12-country franchise, then spent 2016–20 separating brand, IT, and governance.",
-      growth: [
-        { year: 2005, countries: 9 },
-        { year: 2013, countries: 12 },
-        { year: 2016, countries: 12 },
-        { year: 2018, countries: 12 },
-        { year: 2020, countries: 12 },
-        { year: 2024, countries: 12 }
-      ],
-      timeline: [
-        {
-          year: "2005",
-          countries: 9,
-          region: "Southern Africa core",
-          entry: "Barclays acquires Absa",
-          markets: ["South Africa platform under Barclays"],
-          event: "Barclays takes control of Absa — seed of Barclays Africa.",
-          advisors: { financial: "Bulge-bracket FAs on Barclays–Absa (era deal)", legal: "SARB / UK regulatory counsel", other: "Integration of SA franchise into Barclays Africa" },
-          vendors: ["Barclays group technology standards", "Absa domestic stack"]
+        "vendors": [
+          "New online banking platforms (9 countries switched)",
+          "Rebrand of 1,000+ branches / 10,000+ ATMs",
+          "Independent Absa tech estate"
+        ]
+      }
+    ],
+    "advice": [
+      "Sometimes expansion is inheritance — then the work is transformation",
+      "Rebrand signals permanence to regulators and customers",
+      "Harvest the network you have before planting new flags"
+    ]
+  },
+  {
+    "rank": 6,
+    "id": "nedbank",
+    "name": "Nedbank",
+    "home": "South Africa",
+    "reach": "~6 own markets + Ecobank alliance reach",
+    "mode": "Own SADC footprint + Ecobank alliance",
+    "firstRegion": "Southern Africa, then alliance-enabled West/Central/East",
+    "summary": "Nedbank combined a focused own-network strategy with the Ecobank alliance — buying continental reach without owning 30+ subsidiaries.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2008,
+        "countries": 5
+      },
+      {
+        "year": 2010,
+        "countries": 6
+      },
+      {
+        "year": 2024,
+        "countries": 6
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1990s–2000s",
+        "countries": 4,
+        "region": "SADC",
+        "entry": "Regional subsidiaries",
+        "markets": [
+          "Namibia",
+          "Eswatini",
+          "Lesotho",
+          "Zimbabwe (historical)"
+        ],
+        "event": "Classic SA bank neighbour expansion.",
+        "advisors": {
+          "financial": "Nedbank corporate development",
+          "legal": "Host regulators",
+          "other": "Client corridor with SA Inc."
         },
-        {
-          year: "2000s–2013",
-          countries: 12,
-          region: "East, Southern & West Africa",
-          entry: "Barclays Africa network assembly",
-          markets: ["Botswana", "Kenya", "Ghana", "Mauritius", "Mozambique", "Seychelles", "Tanzania", "Uganda", "Zambia", "+ SA"],
-          event: "Rest-of-Africa subsidiaries brought under Barclays Africa Group umbrella.",
-          advisors: { financial: "Barclays / Absa CIB internal", legal: "Multi-country regulatory counsel", other: "Network largely inherited from Barclays colonial/post-colonial footprint" },
-          vendors: ["Barclays brand & systems", "Group risk & compliance stack"]
+        "vendors": [
+          "Group core standards",
+          "Corporate banking platforms"
+        ]
+      },
+      {
+        "year": "2008",
+        "countries": 6,
+        "region": "Pan-African via alliance",
+        "entry": "Alliance (not acquisition)",
+        "markets": [
+          "Ecobank alliance — reciprocal access across Ecobank markets"
+        ],
+        "event": "Landmark alternative to buying flags: alliance gives clients continental coverage.",
+        "advisors": {
+          "financial": "In-house strategy teams (Nedbank & Ecobank)",
+          "legal": "Alliance / cooperation counsel",
+          "other": "Partnership model vs capital-heavy M&A"
         },
-        {
-          year: "2016–17",
-          countries: 12,
-          region: "Pan-African (separation)",
-          entry: "Parent sell-down + TSA",
-          markets: ["Barclays PLC cuts to minority; separation terms agreed"],
-          event: "Barclays contributes ~R12.6bn toward separation; TSA governs transitional services.",
-          advisors: { financial: "Barclays & Absa as global coordinators on separation financing/process", legal: "Separation agreements counsel (SA + UK)", other: "SARB / Finance Ministry approvals central" },
-          vendors: ["Barclays TSA (IT, brand, ops)", "Large-scale data/system migration programme (~270 projects)"]
+        "vendors": [
+          "Cross-referral coverage model",
+          "Shared client service protocols"
+        ]
+      },
+      {
+        "year": "2010s–20s",
+        "countries": 6,
+        "region": "SADC deepen + alliance",
+        "entry": "Organic / selective",
+        "markets": [
+          "Mozambique",
+          "Own Rest of Africa focus"
+        ],
+        "event": "Keep own footprint tight; lean on alliance for breadth.",
+        "advisors": {
+          "financial": "Group strategy",
+          "legal": "Ongoing alliance governance",
+          "other": "Bank of China partnership historically for Sino-African flows"
         },
-        {
-          year: "2018–20",
-          countries: 12,
-          region: "Same 12 — rebranded",
-          entry: "Transformation, not new countries",
-          markets: ["Absa Group rename", "Absa rebrand across Africa"],
-          event: "Country count flat; value is independence, brand, and systems ownership.",
-          advisors: { financial: "Absa Group programme office", legal: "Brand / trademark transitional licences", other: "Accenture-class SI partners typically on migrations (programme vendors)" },
-          vendors: ["New online banking platforms (9 countries switched)", "Rebrand of 1,000+ branches / 10,000+ ATMs", "Independent Absa tech estate"]
-        }
-      ],
-      advice: [
-        "Sometimes expansion is inheritance — then the work is transformation",
-        "Rebrand signals permanence to regulators and customers",
-        "Harvest the network you have before planting new flags"
-      ]
-    },
-    {
-      id: "access",
-      name: "Access Bank",
-      home: "Nigeria",
-      reach: "~15+ African markets",
-      mode: "Bank M&A + seller exits",
-      firstRegion: "West Africa (Gambia, Sierra Leone), then East & Southern Africa",
-      summary:
-        "Won Nigeria first (Intercontinental, Diamond), then bought banks and seller exits across East, Southern, and West Africa — including Standard Chartered portfolios.",
-      growth: [
-        { year: 2011, countries: 1 },
-        { year: 2017, countries: 6 },
-        { year: 2019, countries: 8 },
-        { year: 2021, countries: 11 },
-        { year: 2023, countries: 14 },
-        { year: 2025, countries: 16 }
-      ],
-      timeline: [
-        {
-          year: "2012–18",
-          countries: 6,
-          region: "Nigeria first, then early Africa",
-          entry: "Domestic scale + early subsidiaries",
-          markets: ["Intercontinental Bank (NG)", "Gambia", "Sierra Leone", "Zambia", "Rwanda", "DRC"],
-          event: "Top-tier Nigeria platform; first African subsidiaries in West & Central/East.",
-          advisors: { financial: "Access corporate development; Nigerian FAs on Intercontinental", legal: "CBN + host licensing counsel", other: "Build management bandwidth before the big Africa wave" },
-          vendors: ["Access digital/retail stack", "Trade finance platforms"]
+        "vendors": [
+          "Digital channels",
+          "Wholesale & trade platforms"
+        ]
+      }
+    ],
+    "advice": [
+      "Alliances can substitute for ownership when capital or management bandwidth is scarce",
+      "Keep owned markets few and deep",
+      "Governance of the alliance matters as much as a SHA"
+    ]
+  },
+  {
+    "rank": 7,
+    "id": "misr",
+    "name": "Banque Misr",
+    "home": "Egypt",
+    "reach": "Egypt + international branches (UAE, Europe, Africa offices)",
+    "mode": "Domestic giant + diaspora/trade branches",
+    "firstRegion": "Egypt / North Africa",
+    "summary": "One of Egypt’s big-three state-linked banks — continental ranking from Egyptian scale, with international branches serving trade and diaspora rather than a sub-Saharan retail network.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2015,
+        "countries": 3
+      },
+      {
+        "year": 2024,
+        "countries": 5
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1920–2000s",
+        "countries": 1,
+        "region": "Egypt",
+        "entry": "Domestic institution build",
+        "markets": [
+          "Egypt"
+        ],
+        "event": "Founded as a national bank; grows with Egypt’s economy and public sector.",
+        "advisors": {
+          "financial": "State / board-directed strategy",
+          "legal": "CBE framework",
+          "other": "Public mandate"
         },
-        {
-          year: "2018–19",
-          countries: 8,
-          region: "Nigeria retail + East Africa",
-          entry: "Landmark domestic merger + Kenya",
-          markets: ["Diamond Bank merger", "Transnational Bank (Kenya)"],
-          event: "Diamond adds mass retail/digital; Kenya opens EAC beachhead.",
-          advisors: { financial: "Access + Diamond deal advisors (Nigerian bulge/local FAs)", legal: "CBN merger counsel; Kenyan CBK counsel on TNB", other: "Retail data/tech capability as acquisition thesis" },
-          vendors: ["Diamond mobile/analytics stack", "Access omni-channel architecture"]
+        "vendors": [
+          "National payment systems",
+          "Branch-heavy retail"
+        ]
+      },
+      {
+        "year": "2000s–20s",
+        "countries": 5,
+        "region": "International corridors",
+        "entry": "Branches & offices",
+        "markets": [
+          "UAE",
+          "Europe",
+          "Select African representative presence"
+        ],
+        "event": "Follow Egyptian trade and diaspora; not a WAEMU/EAC acquisition wave.",
+        "advisors": {
+          "financial": "International expansion unit",
+          "legal": "Host branch licensing",
+          "other": "Corridor logic"
         },
-        {
-          year: "2020–22",
-          countries: 12,
-          region: "Southern Africa (SADC) push",
-          entry: "Bank acquisitions",
-          markets: ["Cavmont (Zambia)", "BancABC Mozambique", "Grobank / SA entry path", "Botswana (BancABC path)", "Cameroon", "Guinea", "France"],
-          event: "SADC corridor build via Atlas Mara / ABC and related franchises.",
-          advisors: { financial: "Access Group M&A; deal-by-deal FAs", legal: "Multi-country SPA counsel", other: "Willing-seller exits (Atlas Mara ecosystem) as primary route" },
-          vendors: ["TSA with sellers where needed", "Access core/digital overlay"]
+        "vendors": [
+          "Correspondent banks",
+          "Trade platforms"
+        ]
+      }
+    ],
+    "advice": [
+      "North African giants often internationalise via branches, not 20 African subsidiaries",
+      "Do not confuse Africa ranking with pan-African operating model",
+      "Diaspora and trade corridors can justify light footprints"
+    ]
+  },
+  {
+    "rank": 8,
+    "id": "cib",
+    "name": "CIB Egypt",
+    "home": "Egypt",
+    "reach": "Primarily Egypt (regional corporate focus)",
+    "mode": "Home-market excellence; cautious regional",
+    "firstRegion": "Egypt",
+    "summary": "Commercial International Bank is Egypt’s leading private-sector bank — a quality compounder whose ‘expansion’ is product and digital depth at home more than multi-country M&A.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2015,
+        "countries": 1
+      },
+      {
+        "year": 2024,
+        "countries": 1
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1975–2000s",
+        "countries": 1,
+        "region": "Egypt",
+        "entry": "Private-sector build",
+        "markets": [
+          "Egypt"
+        ],
+        "event": "CIB becomes the benchmark private bank in Egypt — corporate and affluent strength.",
+        "advisors": {
+          "financial": "Historical Chase / private shareholders eras; later market investors",
+          "legal": "CBE",
+          "other": "Governance premium as strategy"
         },
-        {
-          year: "2023–24",
-          countries: 16,
-          region: "West, Central, East Africa",
-          entry: "Standard Chartered portfolio + more",
-          markets: ["Angola", "Cameroon", "Gambia", "Sierra Leone", "Tanzania CPBB", "Finibanco Angola path", "Kenya deepening"],
-          event: "Buys Stanchart subsidiaries / CPBB books — classic European seller-exit wave.",
-          advisors: { financial: "Exotix Advisory (FA to Access on Stanchart package)", legal: "DLA Piper (legal to Access on Stanchart package)", other: "Standard Chartered as organised multi-market seller" },
-          vendors: ["Stanchart TSA / transition services", "Access payments gateway strategy", "Local core conversion programmes"]
-        }
-      ],
-      advice: [
-        "Win at home first; export a proven retail/corporate machine",
-        "Prefer licensed banks when speed-to-full-product matters",
-        "Use European seller exits (Stanchart-style) for multi-country leaps"
-      ]
-    }
-  ],
+        "vendors": [
+          "Advanced core & digital banking",
+          "Cards and wealth platforms"
+        ]
+      },
+      {
+        "year": "2010s–20s",
+        "countries": 1,
+        "region": "Egypt",
+        "entry": "Digital & corporate deepening",
+        "markets": [
+          "Egypt nationwide"
+        ],
+        "event": "Stays largely domestic while climbing Africa rankings on capital quality and profitability.",
+        "advisors": {
+          "financial": "In-house strategy; ECM advisors on listings/raises",
+          "legal": "Capital markets counsel",
+          "other": "Returns > flags"
+        },
+        "vendors": [
+          "Mobile / internet banking leaders",
+          "Corporate cash management"
+        ]
+      }
+    ],
+    "advice": [
+      "Sometimes the playbook is not to expand countries — dominate one market superbly",
+      "Private-sector governance can beat sprawling networks on returns",
+      "Only cross borders when client demand is proven"
+    ]
+  },
+  {
+    "rank": 9,
+    "id": "boa",
+    "name": "Bank of Africa",
+    "home": "Morocco (BMCE) / BOA network",
+    "reach": "~18–20 countries",
+    "mode": "Buy the pan-African brand",
+    "firstRegion": "West Africa (Mali-origin BOA), then East Africa & Indian Ocean",
+    "summary": "BOA was born pan-African in Mali; BMCE bought into the holding (2008) and took control (~2010), marrying Moroccan capital to an existing multi-region network.",
+    "growth": [
+      {
+        "year": 1982,
+        "countries": 1
+      },
+      {
+        "year": 1990,
+        "countries": 2
+      },
+      {
+        "year": 2001,
+        "countries": 6
+      },
+      {
+        "year": 2008,
+        "countries": 15
+      },
+      {
+        "year": 2010,
+        "countries": 17
+      },
+      {
+        "year": 2015,
+        "countries": 18
+      },
+      {
+        "year": 2023,
+        "countries": 19
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1982–2001",
+        "countries": 6,
+        "region": "West Africa first",
+        "entry": "Greenfield network build",
+        "markets": [
+          "Mali",
+          "Benin",
+          "Burkina Faso",
+          "Senegal",
+          "+ early partners"
+        ],
+        "event": "Bank of Africa identity spreads across WAEMU before Moroccan ownership.",
+        "advisors": {
+          "financial": "BOA founding shareholders / DFIs historically on cap table",
+          "legal": "OHADA licensing counsel",
+          "other": "Development-finance flavoured shareholder mix"
+        },
+        "vendors": [
+          "BOA holding technical subsidiaries",
+          "Shared IT processing units"
+        ]
+      },
+      {
+        "year": "2008",
+        "countries": 15,
+        "region": "Already multi-region",
+        "entry": "Strategic stake",
+        "markets": [
+          "BMCE acquires ~35% of BOA Holding (then ~15–18 country network)"
+        ],
+        "event": "Moroccan capital enters; BOA already spans West, East, Indian Ocean.",
+        "advisors": {
+          "financial": "BMCE Capital / group finance; BOA Holding sell-side process",
+          "legal": "Luxembourg holding + Moroccan counsel",
+          "other": "Stake built toward control rather than one-shot 100% buyout"
+        },
+        "vendors": [
+          "BOA Group IT & processing companies",
+          "BMCE European hubs (London/Paris) for Africa flows"
+        ]
+      },
+      {
+        "year": "2010–15",
+        "countries": 18,
+        "region": "East Africa, DRC, Indian Ocean",
+        "entry": "Control + bolt-ons",
+        "markets": [
+          "DRC",
+          "Djibouti",
+          "Rwanda",
+          "France subsidiary",
+          "stake raised to ~73–75%"
+        ],
+        "event": "BMCE becomes majority owner; rebrand path to BMCE Bank of Africa / BANK OF AFRICA.",
+        "advisors": {
+          "financial": "BMCE Capital advisory",
+          "legal": "Multi-country change-of-control counsel",
+          "other": "Preserve BOA brand equity in host markets"
+        },
+        "vendors": [
+          "Group technical support subsidiaries",
+          "Trade desks via BMCE International"
+        ]
+      },
+      {
+        "year": "2015–23",
+        "countries": 19,
+        "region": "WAEMU + EAC + Indian Ocean + Central",
+        "entry": "Deepen network",
+        "markets": [
+          "Togo",
+          "Ethiopia (rep)",
+          "Shanghai",
+          "full BANK OF AFRICA identity"
+        ],
+        "event": "Footprint stabilises ~18–20 countries with Moroccan parent fully African-branded.",
+        "advisors": {
+          "financial": "BANK OF AFRICA / BMCE Capital",
+          "legal": "Ongoing host counsel",
+          "other": "DFIs remain minority partners in several subsidiaries"
+        },
+        "vendors": [
+          "Two IT processing/support companies",
+          "Investment company + regional holdings"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand by acquiring a multi-country brand, not one country at a time",
+      "Holding-company architecture matters for capital and oversight",
+      "Preserve local brand equity while upgrading group standards"
+    ]
+  },
+  {
+    "rank": 10,
+    "id": "bcp",
+    "name": "Banque Centrale Populaire",
+    "home": "Morocco",
+    "reach": "~10+ African markets (via subsidiaries / partnerships)",
+    "mode": "Moroccan cooperative group + Africa push",
+    "firstRegion": "Morocco, then West/Central Africa",
+    "summary": "BCP is a Moroccan powerhouse with a deliberate Africa development agenda — part of the Moroccan trio (with Attijariwafa and BOA) that bought into francophone Africa.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2012,
+        "countries": 5
+      },
+      {
+        "year": 2018,
+        "countries": 9
+      },
+      {
+        "year": 2024,
+        "countries": 11
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1960s–2000s",
+        "countries": 1,
+        "region": "Morocco",
+        "entry": "Domestic cooperative network",
+        "markets": [
+          "Morocco"
+        ],
+        "event": "Deep Moroccan franchise and diaspora remittance strength in Europe.",
+        "advisors": {
+          "financial": "Group strategy",
+          "legal": "Bank Al-Maghrib",
+          "other": "Cooperative governance model"
+        },
+        "vendors": [
+          "Remittance corridors to Europe",
+          "Wide branch network"
+        ]
+      },
+      {
+        "year": "2010s",
+        "countries": 8,
+        "region": "West & Central Africa",
+        "entry": "Acquisitions / subsidiaries",
+        "markets": [
+          "WAEMU / CEMAC targets",
+          "Guinea",
+          "Madagascar path"
+        ],
+        "event": "Joins Moroccan banks’ southward push into francophone Africa.",
+        "advisors": {
+          "financial": "BCP international development + deal FAs",
+          "legal": "OHADA / host counsel",
+          "other": "Often competing with Attijariwafa/BOA for the same seller assets"
+        },
+        "vendors": [
+          "Group IT export",
+          "Remittance & trade products"
+        ]
+      },
+      {
+        "year": "2018–24",
+        "countries": 11,
+        "region": "Sub-Saharan deepen",
+        "entry": "Bolt-ons + organic",
+        "markets": [
+          "Additional francophone markets"
+        ],
+        "event": "Consolidate Africa portfolio; emphasise development finance and retail.",
+        "advisors": {
+          "financial": "In-house Africa PMO",
+          "legal": "Multi-country counsel",
+          "other": "DFI partners on some files"
+        },
+        "vendors": [
+          "Shared services",
+          "Digital channels"
+        ]
+      }
+    ],
+    "advice": [
+      "Moroccan banks cluster in francophone Africa for a reason — copy the affinity logic",
+      "Expect competition among Attijari / BOA / BCP for the same assets",
+      "Remittance heritage can fund Africa retail ambitions"
+    ]
+  },
+  {
+    "rank": 11,
+    "id": "access",
+    "name": "Access Bank",
+    "home": "Nigeria",
+    "reach": "~15+ African markets",
+    "mode": "Bank M&A + seller exits",
+    "firstRegion": "West Africa (Gambia, Sierra Leone), then East & Southern Africa",
+    "summary": "Won Nigeria first (Intercontinental, Diamond), then bought banks and seller exits across East, Southern, and West Africa — including Standard Chartered portfolios.",
+    "growth": [
+      {
+        "year": 2011,
+        "countries": 1
+      },
+      {
+        "year": 2017,
+        "countries": 6
+      },
+      {
+        "year": 2019,
+        "countries": 8
+      },
+      {
+        "year": 2021,
+        "countries": 11
+      },
+      {
+        "year": 2023,
+        "countries": 14
+      },
+      {
+        "year": 2025,
+        "countries": 16
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2012–18",
+        "countries": 6,
+        "region": "Nigeria first, then early Africa",
+        "entry": "Domestic scale + early subsidiaries",
+        "markets": [
+          "Intercontinental Bank (NG)",
+          "Gambia",
+          "Sierra Leone",
+          "Zambia",
+          "Rwanda",
+          "DRC"
+        ],
+        "event": "Top-tier Nigeria platform; first African subsidiaries in West & Central/East.",
+        "advisors": {
+          "financial": "Access corporate development; Nigerian FAs on Intercontinental",
+          "legal": "CBN + host licensing counsel",
+          "other": "Build management bandwidth before the big Africa wave"
+        },
+        "vendors": [
+          "Access digital/retail stack",
+          "Trade finance platforms"
+        ]
+      },
+      {
+        "year": "2018–19",
+        "countries": 8,
+        "region": "Nigeria retail + East Africa",
+        "entry": "Landmark domestic merger + Kenya",
+        "markets": [
+          "Diamond Bank merger",
+          "Transnational Bank (Kenya)"
+        ],
+        "event": "Diamond adds mass retail/digital; Kenya opens EAC beachhead.",
+        "advisors": {
+          "financial": "Access + Diamond deal advisors (Nigerian bulge/local FAs)",
+          "legal": "CBN merger counsel; Kenyan CBK counsel on TNB",
+          "other": "Retail data/tech capability as acquisition thesis"
+        },
+        "vendors": [
+          "Diamond mobile/analytics stack",
+          "Access omni-channel architecture"
+        ]
+      },
+      {
+        "year": "2020–22",
+        "countries": 12,
+        "region": "Southern Africa (SADC) push",
+        "entry": "Bank acquisitions",
+        "markets": [
+          "Cavmont (Zambia)",
+          "BancABC Mozambique",
+          "Grobank / SA entry path",
+          "Botswana (BancABC path)",
+          "Cameroon",
+          "Guinea",
+          "France"
+        ],
+        "event": "SADC corridor build via Atlas Mara / ABC and related franchises.",
+        "advisors": {
+          "financial": "Access Group M&A; deal-by-deal FAs",
+          "legal": "Multi-country SPA counsel",
+          "other": "Willing-seller exits (Atlas Mara ecosystem) as primary route"
+        },
+        "vendors": [
+          "TSA with sellers where needed",
+          "Access core/digital overlay"
+        ]
+      },
+      {
+        "year": "2023–24",
+        "countries": 16,
+        "region": "West, Central, East Africa",
+        "entry": "Standard Chartered portfolio + more",
+        "markets": [
+          "Angola",
+          "Cameroon",
+          "Gambia",
+          "Sierra Leone",
+          "Tanzania CPBB",
+          "Finibanco Angola path",
+          "Kenya deepening"
+        ],
+        "event": "Buys Stanchart subsidiaries / CPBB books — classic European seller-exit wave.",
+        "advisors": {
+          "financial": "Exotix Advisory (FA to Access on Stanchart package)",
+          "legal": "DLA Piper (legal to Access on Stanchart package)",
+          "other": "Standard Chartered as organised multi-market seller"
+        },
+        "vendors": [
+          "Stanchart TSA / transition services",
+          "Access payments gateway strategy",
+          "Local core conversion programmes"
+        ]
+      }
+    ],
+    "advice": [
+      "Win at home first; export a proven retail/corporate machine",
+      "Prefer licensed banks when speed-to-full-product matters",
+      "Use European seller exits (Stanchart-style) for multi-country leaps"
+    ]
+  },
+  {
+    "rank": 12,
+    "id": "zenith",
+    "name": "Zenith Bank",
+    "home": "Nigeria",
+    "reach": "~6–7 countries (West Africa + UK/China presence)",
+    "mode": "Selective West Africa subsidiaries",
+    "firstRegion": "West Africa (Ghana first among peers pattern)",
+    "summary": "A top Nigerian Tier-1 that expanded carefully into Ghana and a handful of West African markets plus global representative presence — quality over Ecobank breadth.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2008,
+        "countries": 2
+      },
+      {
+        "year": 2015,
+        "countries": 5
+      },
+      {
+        "year": 2024,
+        "countries": 6
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1990–2005",
+        "countries": 1,
+        "region": "Nigeria",
+        "entry": "Domestic build",
+        "markets": [
+          "Nigeria"
+        ],
+        "event": "Zenith becomes a leading Nigerian corporate/retail bank post-liberalisation.",
+        "advisors": {
+          "financial": "Founder-led strategy; ECM advisors on listings",
+          "legal": "CBN",
+          "other": "Corporate banking excellence first"
+        },
+        "vendors": [
+          "Strong electronic banking reputation",
+          "Cards & payments"
+        ]
+      },
+      {
+        "year": "2008–15",
+        "countries": 5,
+        "region": "West Africa",
+        "entry": "Subsidiaries",
+        "markets": [
+          "Ghana",
+          "Sierra Leone",
+          "Gambia",
+          "Other WA"
+        ],
+        "event": "Follow Nigerian corporate clients and diaspora; keep footprint manageable.",
+        "advisors": {
+          "financial": "Zenith international banking division",
+          "legal": "Host licensing counsel",
+          "other": "Greenfield/subsidiary preference over mega-network buys"
+        },
+        "vendors": [
+          "Group technology standards",
+          "Correspondent links"
+        ]
+      },
+      {
+        "year": "2015–24",
+        "countries": 6,
+        "region": "UK / China + WA",
+        "entry": "Hubs + deepen",
+        "markets": [
+          "UK",
+          "China representative",
+          "WA deepen"
+        ],
+        "event": "Trade hubs complement African subsidiaries; Africa country count stays selective.",
+        "advisors": {
+          "financial": "International branch advisors",
+          "legal": "PRA/FCA style counsel for UK",
+          "other": "Trade corridor with Asia"
+        },
+        "vendors": [
+          "Trade finance platforms",
+          "Digital channels"
+        ]
+      }
+    ],
+    "advice": [
+      "Nigerian Tier-1s can win with 5–7 markets if each is well capitalised",
+      "Ghana remains the classic first hop",
+      "Pair African subsidiaries with London/Asia trade hubs"
+    ]
+  },
+  {
+    "rank": 13,
+    "id": "firstbank",
+    "name": "FirstBank (FBNH)",
+    "home": "Nigeria",
+    "reach": "~8–10 markets historically (WA + UK)",
+    "mode": "Heritage West Africa + UK",
+    "firstRegion": "West Africa (oldest Nigerian international network)",
+    "summary": "Nigeria’s oldest bank — internationalised early across West Africa and London. Expansion is heritage plus selective modernisation, not a 2010s sprint.",
+    "growth": [
+      {
+        "year": 1990,
+        "countries": 4
+      },
+      {
+        "year": 2005,
+        "countries": 6
+      },
+      {
+        "year": 2015,
+        "countries": 8
+      },
+      {
+        "year": 2024,
+        "countries": 8
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1894–1990s",
+        "countries": 4,
+        "region": "West Africa + UK",
+        "entry": "Colonial / heritage network",
+        "markets": [
+          "Nigeria",
+          "UK",
+          "Early WA presence"
+        ],
+        "event": "FirstBank’s international identity predates modern pan-African M&A waves.",
+        "advisors": {
+          "financial": "Historical British colonial banking structures → Nigerian ownership",
+          "legal": "Host regulators over decades",
+          "other": "Heritage network maintenance"
+        },
+        "vendors": [
+          "Legacy cores modernised over time",
+          "UK subsidiary banking"
+        ]
+      },
+      {
+        "year": "2000s–10s",
+        "countries": 8,
+        "region": "West Africa",
+        "entry": "Subsidiary refresh",
+        "markets": [
+          "Ghana",
+          "DRC",
+          "Guinea",
+          "Sierra Leone",
+          "Gambia",
+          "Senegal path"
+        ],
+        "event": "Refresh and extend WA footprint under holding company era.",
+        "advisors": {
+          "financial": "FBNHoldings strategy / sometimes external FAs",
+          "legal": "Multi-country counsel",
+          "other": "Holding company restructuring as enabler"
+        },
+        "vendors": [
+          "Group shared services",
+          "Digital rebuild programmes"
+        ]
+      },
+      {
+        "year": "2020s",
+        "countries": 8,
+        "region": "WA + UK",
+        "entry": "Deepen / restructure",
+        "markets": [
+          "Priority markets focus"
+        ],
+        "event": "Emphasis on returns and tech upgrade over new flags.",
+        "advisors": {
+          "financial": "Group strategy",
+          "legal": "Regulatory remediation counsel as needed",
+          "other": "Capital optimisation at holdco"
+        },
+        "vendors": [
+          "Core banking upgrades",
+          "Agency/digital channels"
+        ]
+      }
+    ],
+    "advice": [
+      "Heritage networks need modern credit and tech — age is not a strategy",
+      "Holding-company clarity helps international capital allocation",
+      "Prune or fix subscale subsidiaries rather than adding more"
+    ]
+  },
+  {
+    "rank": 14,
+    "id": "uba",
+    "name": "UBA",
+    "home": "Nigeria",
+    "reach": "20 African markets (+ global hubs)",
+    "mode": "Rapid multi-country push",
+    "firstRegion": "West Africa (Ghana first), then Central & East",
+    "summary": "Post-2005 consolidation capital funded a sprint across Africa — Ghana first, then a 2007–11 wave that filled ~19 African markets before consolidation.",
+    "growth": [
+      {
+        "year": 2004,
+        "countries": 1
+      },
+      {
+        "year": 2005,
+        "countries": 2
+      },
+      {
+        "year": 2007,
+        "countries": 3
+      },
+      {
+        "year": 2008,
+        "countries": 10
+      },
+      {
+        "year": 2009,
+        "countries": 13
+      },
+      {
+        "year": 2010,
+        "countries": 16
+      },
+      {
+        "year": 2011,
+        "countries": 19
+      },
+      {
+        "year": 2024,
+        "countries": 20
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2005–06",
+        "countries": 2,
+        "region": "Nigeria (home scale)",
+        "entry": "Domestic mega-merger",
+        "markets": [
+          "STB + UBA merger",
+          "Continental Trust",
+          "Trade Bank"
+        ],
+        "event": "Nigeria consolidation creates surplus capital and management ambition for Africa.",
+        "advisors": {
+          "financial": "Domestic Nigerian FAs on STB–UBA merger",
+          "legal": "NSE / CBN merger counsel",
+          "other": "McKinsey later engaged to stress-test pan-African strategy"
+        },
+        "vendors": [
+          "Merged Nigerian core stacks",
+          "UBA Capital UK (Afrinvest)"
+        ]
+      },
+      {
+        "year": "2005",
+        "countries": 2,
+        "region": "West Africa",
+        "entry": "First African subsidiary",
+        "markets": [
+          "Ghana"
+        ],
+        "event": "Ghana is the first continental beachhead — English-law, familiar regulator peers.",
+        "advisors": {
+          "financial": "UBA Group strategy / corporate development",
+          "legal": "BoG licensing counsel",
+          "other": "Greenfield-style subsidiary build"
+        },
+        "vendors": [
+          "Group technology export",
+          "Correspondent links via UBA America"
+        ]
+      },
+      {
+        "year": "2007–08",
+        "countries": 10,
+        "region": "West & Central Africa (+ Uganda)",
+        "entry": "License wave",
+        "markets": [
+          "Cameroon",
+          "Burkina Faso",
+          "Chad",
+          "Côte d'Ivoire",
+          "Liberia",
+          "Senegal",
+          "Sierra Leone",
+          "Uganda"
+        ],
+        "event": "Explosive year: seven+ markets in 2008 alone after Cameroon 2007.",
+        "advisors": {
+          "financial": "In-house Africa expansion PMO; strategy support (McKinsey cited on growth revalidation)",
+          "legal": "Local licensing counsel per CEMAC / UEMOA / EAC market",
+          "other": "Mostly greenfield licenses, not landmark bank buys"
+        },
+        "vendors": [
+          "Standardised UBA branch/IT kit",
+          "Group risk templates rolled out country-by-country"
+        ]
+      },
+      {
+        "year": "2009–11",
+        "countries": 19,
+        "region": "East, Southern & Central Africa",
+        "entry": "License completion wave",
+        "markets": [
+          "Gabon",
+          "Kenya",
+          "Tanzania",
+          "Guinea",
+          "Mozambique",
+          "Zambia",
+          "Congo-Brazzaville",
+          "DRC"
+        ],
+        "event": "Major expansion phase declared complete at ~19 African operations; shift to consolidation.",
+        "advisors": {
+          "financial": "Group corporate development",
+          "legal": "Multi-country regulatory counsel",
+          "other": "Limited named bulge-bracket FA — speed favoured in-house execution"
+        },
+        "vendors": [
+          "UBA Group shared services",
+          "Trade & remittance corridors via US/UK/France hubs"
+        ]
+      },
+      {
+        "year": "2012–24",
+        "countries": 20,
+        "region": "Selective adds + global hubs",
+        "entry": "Fill-ins",
+        "markets": [
+          "Benin",
+          "Mali",
+          "UK",
+          "Dubai",
+          "France"
+        ],
+        "event": "Fewer new African flags; deepen existing markets; add global trade hubs.",
+        "advisors": {
+          "financial": "UBA Capital / group treasury on hub builds",
+          "legal": "Host-country branch/subsidiary counsel",
+          "other": "Focus on revenue share outside Nigeria (>50% in recent reviews)"
+        },
+        "vendors": [
+          "Digital / agency banking",
+          "Cross-border payment platforms"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand when home-market capital rules fund outward growth",
+      "Many flags ≠ many franchises — aim for deposit share that matters",
+      "Use diaspora and trade corridors as demand anchors"
+    ]
+  },
+  {
+    "rank": 15,
+    "id": "gtco",
+    "name": "GTCO / GTBank",
+    "home": "Nigeria",
+    "reach": "~7–9 African markets + UK",
+    "mode": "Brand-led West Africa subsidiaries",
+    "firstRegion": "West Africa (Ghana as flagship ex-Nigeria)",
+    "summary": "Guaranty Trust’s Africa expansion rode a strong brand and retail/corporate culture into Ghana and other West African markets, with London as a hub — a controlled footprint strategy.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2010,
+        "countries": 4
+      },
+      {
+        "year": 2017,
+        "countries": 7
+      },
+      {
+        "year": 2024,
+        "countries": 8
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1990–2006",
+        "countries": 1,
+        "region": "Nigeria",
+        "entry": "Domestic brand build",
+        "markets": [
+          "Nigeria"
+        ],
+        "event": "GTBank builds iconic service/brand reputation before internationalising.",
+        "advisors": {
+          "financial": "Founder-era strategy; IPO advisors historically",
+          "legal": "CBN",
+          "other": "Brand as expansion asset"
+        },
+        "vendors": [
+          "Early electronic banking leadership",
+          "Orange identity retail experience"
+        ]
+      },
+      {
+        "year": "2006–15",
+        "countries": 6,
+        "region": "West Africa",
+        "entry": "Greenfield subsidiaries",
+        "markets": [
+          "Ghana",
+          "Liberia",
+          "Sierra Leone",
+          "Gambia",
+          "Côte d'Ivoire"
+        ],
+        "event": "Export the GT brand across Anglophone (and some Francophone) West Africa.",
+        "advisors": {
+          "financial": "GT international banking team",
+          "legal": "Host licensing counsel",
+          "other": "Mostly organic subsidiaries, not mega acquisitions"
+        },
+        "vendors": [
+          "Group IT standards",
+          "Brand/CX playbook"
+        ]
+      },
+      {
+        "year": "2016–24",
+        "countries": 8,
+        "region": "WA + UK + holdco",
+        "entry": "Holdco (GTCO) + deepen",
+        "markets": [
+          "UK",
+          "Tanzania/others evolution",
+          "Holdco diversification"
+        ],
+        "event": "Holdco structure; selective Africa presence kept lean versus Access/UBA breadth.",
+        "advisors": {
+          "financial": "Holdco advisers on restructuring",
+          "legal": "CBN holdco approvals",
+          "other": "Payments/fintech adjacency under holdco"
+        },
+        "vendors": [
+          "Digital channels",
+          "Payments subsidiaries"
+        ]
+      }
+    ],
+    "advice": [
+      "Brand strength can lower customer-acquisition cost abroad",
+      "Holdco structures free Africa banking from non-bank bets",
+      "Anglophone WA remains the natural Nigerian first region"
+    ]
+  },
+  {
+    "rank": 16,
+    "id": "ecobank",
+    "name": "Ecobank",
+    "home": "Togo / ECOWAS",
+    "reach": "~33–35 African markets (peak ~36)",
+    "mode": "Greenfield-heavy, then selective M&A",
+    "firstRegion": "West Africa (ECOWAS / UEMOA)",
+    "summary": "Purpose-built pan-African bank. Grew country-by-country from Lomé, saturating West Africa before leaping into Central and East Africa.",
+    "growth": [
+      {
+        "year": 1988,
+        "countries": 1
+      },
+      {
+        "year": 1995,
+        "countries": 5
+      },
+      {
+        "year": 2000,
+        "countries": 11
+      },
+      {
+        "year": 2005,
+        "countries": 15
+      },
+      {
+        "year": 2010,
+        "countries": 30
+      },
+      {
+        "year": 2011,
+        "countries": 35
+      },
+      {
+        "year": 2015,
+        "countries": 36
+      },
+      {
+        "year": 2025,
+        "countries": 34
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1985–88",
+        "countries": 1,
+        "region": "West Africa",
+        "entry": "Greenfield / charter",
+        "markets": [
+          "Togo (HQ)"
+        ],
+        "event": "ETI founded with ECOWAS mandate; first operating bank in Lomé.",
+        "advisors": {
+          "financial": "Founding ECOWAS / private African sponsors",
+          "legal": "Togolese HQ agreement counsel",
+          "other": "Development-finance oriented founding coalition"
+        },
+        "vendors": [
+          "Local core banking build",
+          "Manual branch model"
+        ]
+      },
+      {
+        "year": "1989–95",
+        "countries": 5,
+        "region": "West Africa",
+        "entry": "Serial greenfields",
+        "markets": [
+          "Nigeria",
+          "Côte d'Ivoire",
+          "Ghana",
+          "Benin"
+        ],
+        "event": "Rapid ECOWAS fill-in; UEMOA currency zone used to scale operations.",
+        "advisors": {
+          "financial": "In-house ETI corporate development",
+          "legal": "Host-country licensing counsel (each market)",
+          "other": "Not a classic FA-led M&A wave — license + capital raises"
+        },
+        "vendors": [
+          "Branch-led distribution",
+          "Correspondent banking rails"
+        ]
+      },
+      {
+        "year": "2001–07",
+        "countries": 18,
+        "region": "Central → East Africa",
+        "entry": "Greenfield + selective buy",
+        "markets": [
+          "Cameroon",
+          "Chad",
+          "Rwanda",
+          "CAR",
+          "Kenya",
+          "DRC",
+          "Uganda",
+          "Zambia"
+        ],
+        "event": "‘Middle Africa’ push beyond West Africa after home region saturation.",
+        "advisors": {
+          "financial": "ETI / EDC investment banking arm",
+          "legal": "Multi-jurisdiction local counsel panels",
+          "other": "Capital markets via 2006 triple listing (NGX, GSE, BRVM)"
+        },
+        "vendors": [
+          "eProcess shared services (group IT)",
+          "Regional stockbrokerage units"
+        ]
+      },
+      {
+        "year": "2008",
+        "countries": 25,
+        "region": "Southern Africa corridor",
+        "entry": "Alliance",
+        "markets": [
+          "Nedbank alliance (SADC access)"
+        ],
+        "event": "Nedbank–Ecobank alliance for reciprocal network access without full ownership.",
+        "advisors": {
+          "financial": "In-house strategy teams (both groups)",
+          "legal": "Alliance / cooperation counsel",
+          "other": "Partnership model vs acquisition"
+        },
+        "vendors": [
+          "Cross-referral corporate banking",
+          "Shared client coverage model"
+        ]
+      },
+      {
+        "year": "2011",
+        "countries": 35,
+        "region": "West Africa deepening",
+        "entry": "Landmark acquisitions",
+        "markets": [
+          "Oceanic Bank (Nigeria)",
+          "The Trust Bank (Ghana)",
+          "Zimbabwe entry",
+          "Cape Verde"
+        ],
+        "event": "Scale deals in Nigeria & Ghana; footprint peaks near 35 countries of presence.",
+        "advisors": {
+          "financial": "ETI M&A / EDC; local Nigerian & Ghanaian FAs on Oceanic & TTB",
+          "legal": "Host counsel for CBN / BoG change-of-control",
+          "other": "Integration led by group management, not PE sponsors"
+        },
+        "vendors": [
+          "eProcess platform consolidation",
+          "Branch network integration",
+          "Oceanic / TTB legacy cores during TSA"
+        ]
+      },
+      {
+        "year": "2015–25",
+        "countries": 34,
+        "region": "Pan-African consolidation",
+        "entry": "Deepen + prune",
+        "markets": [
+          "One Bank model",
+          "Select exits (e.g. Mozambique 2025)"
+        ],
+        "event": "Unify operating model; prune subscale markets; keep ~33–34 African banking markets.",
+        "advisors": {
+          "financial": "Group strategy / transformation offices",
+          "legal": "Ongoing regulatory counsel network",
+          "other": "Digital & payments product partners"
+        },
+        "vendors": [
+          "Unified mobile / Omni platform",
+          "eProcess centralised ops",
+          "Payment rails across affiliates"
+        ]
+      }
+    ],
+    "advice": [
+      "Expand when regional trade blocs create natural corridors",
+      "Central holding + local banks works if governance is strong",
+      "Breadth without depth creates subscale subsidiaries — watch economics"
+    ]
+  },
+  {
+    "rank": 17,
+    "id": "equity",
+    "name": "Equity Group",
+    "home": "Kenya",
+    "reach": "~7–8 East/Central African markets",
+    "mode": "Regional bank M&A + transformation",
+    "firstRegion": "East Africa (EAC)",
+    "summary": "Equity turned a Kenyan mass-market machine into an EAC/Central Africa group via acquisitions (e.g. legacy banks in DRC, Uganda, Rwanda, Tanzania, South Sudan) and heavy inclusion branding.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2012,
+        "countries": 4
+      },
+      {
+        "year": 2017,
+        "countries": 6
+      },
+      {
+        "year": 2024,
+        "countries": 7
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1984–2010",
+        "countries": 1,
+        "region": "Kenya",
+        "entry": "Domestic mass-market transformation",
+        "markets": [
+          "Kenya"
+        ],
+        "event": "From building society to Kenya’s inclusion powerhouse — home strength before region.",
+        "advisors": {
+          "financial": "IFC / DFI capital partners historically influential",
+          "legal": "CBK",
+          "other": "DFI playbooks on inclusion"
+        },
+        "vendors": [
+          "Agency banking",
+          "Mobile money adjacency"
+        ]
+      },
+      {
+        "year": "2010–17",
+        "countries": 6,
+        "region": "East Africa",
+        "entry": "Acquisitions",
+        "markets": [
+          "Uganda",
+          "South Sudan",
+          "Tanzania",
+          "Rwanda",
+          "DRC"
+        ],
+        "event": "Buy and transform banks across EAC/Central — Equity style inclusion export.",
+        "advisors": {
+          "financial": "Equity M&A team + FAs on larger files; DFI co-investors often present",
+          "legal": "EAC host counsel",
+          "other": "Transformation teams post-close are the real product"
+        },
+        "vendors": [
+          "Equity digital/agency model",
+          "Core conversion programmes"
+        ]
+      },
+      {
+        "year": "2018–24",
+        "countries": 7,
+        "region": "EAC / Central",
+        "entry": "Deepen + ambitions beyond",
+        "markets": [
+          "DRC scale-up",
+          "Regional digital"
+        ],
+        "event": "Double down on DRC and regional payments; discuss further Africa ambitions carefully against capital.",
+        "advisors": {
+          "financial": "Group strategy; DFI partners",
+          "legal": "Multi-country regulators",
+          "other": "Capital as constraint on next flags"
+        },
+        "vendors": [
+          "Omni-channel / agency",
+          "Regional payment rails"
+        ]
+      }
+    ],
+    "advice": [
+      "Win inclusion at home, then export the operating system via acquisitions",
+      "DFIs can de-risk regional bank buys",
+      "EAC is a natural first region for Kenyan groups"
+    ]
+  },
+  {
+    "rank": 18,
+    "id": "kcb",
+    "name": "KCB Group",
+    "home": "Kenya",
+    "reach": "~6–7 East African markets",
+    "mode": "EAC acquisitions + organic",
+    "firstRegion": "East Africa",
+    "summary": "KCB is Kenya’s corporate banking heavyweight that built an EAC footprint through acquisitions and subsidiaries — competing with Equity for regional primacy.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2012,
+        "countries": 5
+      },
+      {
+        "year": 2019,
+        "countries": 6
+      },
+      {
+        "year": 2024,
+        "countries": 7
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1896–2000s",
+        "countries": 1,
+        "region": "Kenya / early EA",
+        "entry": "Heritage regional bank",
+        "markets": [
+          "Kenya",
+          "early Tanzania/Uganda history"
+        ],
+        "event": "Colonial-era East African roots evolve into Kenyan group leadership.",
+        "advisors": {
+          "financial": "Historical; later privatisation advisors",
+          "legal": "CBK",
+          "other": "Government ownership chapters historically"
+        },
+        "vendors": [
+          "Corporate banking platforms",
+          "Branch network"
+        ]
+      },
+      {
+        "year": "2000s–15",
+        "countries": 5,
+        "region": "East Africa",
+        "entry": "Acquisitions / subsidiaries",
+        "markets": [
+          "Uganda",
+          "Tanzania",
+          "Rwanda",
+          "Burundi",
+          "South Sudan"
+        ],
+        "event": "Formal EAC group build-out.",
+        "advisors": {
+          "financial": "KCB capital / M&A; FAs on larger deals",
+          "legal": "Host central banks",
+          "other": "Regional corporate clients as demand anchor"
+        },
+        "vendors": [
+          "Group core alignment",
+          "Trade products"
+        ]
+      },
+      {
+        "year": "2019–24",
+        "countries": 7,
+        "region": "EAC + DRC ambitions",
+        "entry": "National Bank of Kenya deal + region",
+        "markets": [
+          "NBK acquisition (Kenya deepen)",
+          "DRC aspirations"
+        ],
+        "event": "Domestic consolidation (NBK) plus regional push — capital allocation tension between home and abroad.",
+        "advisors": {
+          "financial": "Advisors on NBK transaction",
+          "legal": "CBK merger counsel",
+          "other": "Home consolidation can fund or distract from Africa"
+        },
+        "vendors": [
+          "Mobile banking",
+          "Agency channels"
+        ]
+      }
+    ],
+    "advice": [
+      "EAC groups face Equity-style competition — differentiate on corporate vs mass",
+      "Domestic mega-deals can pause regional expansion",
+      "Follow corporate trade lanes across borders"
+    ]
+  },
+  {
+    "rank": 19,
+    "id": "coop",
+    "name": "Co-operative Bank of Kenya",
+    "home": "Kenya",
+    "reach": "Kenya + South Sudan (focused)",
+    "mode": "Domestic cooperative strength + selective EA",
+    "firstRegion": "Kenya, then South Sudan",
+    "summary": "A top Kenyan bank by capital with a cooperative heritage — expansion has been cautious, prioritising home-market leadership over a wide African map.",
+    "growth": [
+      {
+        "year": 2005,
+        "countries": 1
+      },
+      {
+        "year": 2012,
+        "countries": 2
+      },
+      {
+        "year": 2024,
+        "countries": 2
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1965–2010",
+        "countries": 1,
+        "region": "Kenya",
+        "entry": "Cooperative sector franchise",
+        "markets": [
+          "Kenya"
+        ],
+        "event": "Deep relationship banking with cooperatives and MSMEs creates a durable Kenyan #3/#4 franchise.",
+        "advisors": {
+          "financial": "Cooperative ownership structures; later IPO advisors",
+          "legal": "CBK",
+          "other": "Member governance DNA"
+        },
+        "vendors": [
+          "M-Pesa adjacency / mobile",
+          "Agency banking"
+        ]
+      },
+      {
+        "year": "2012–24",
+        "countries": 2,
+        "region": "East Africa selective",
+        "entry": "South Sudan subsidiary",
+        "markets": [
+          "South Sudan"
+        ],
+        "event": "Limited cross-border footprint — capital conserved for Kenyan competition with Equity/KCB.",
+        "advisors": {
+          "financial": "Group international unit",
+          "legal": "Bank of South Sudan licensing",
+          "other": "Selective vs sprawling"
+        },
+        "vendors": [
+          "Group systems export",
+          "Mobile channels"
+        ]
+      }
+    ],
+    "advice": [
+      "Not every top-20 bank should be pan-African — focus can be rational",
+      "Cooperative/MSMEs DNA is hard to export without local partners",
+      "One carefully chosen neighbour market can be enough"
+    ]
+  },
+  {
+    "rank": 20,
+    "id": "bgfi",
+    "name": "BGFIBank",
+    "home": "Gabon / CEMAC",
+    "reach": "~10 countries (CEMAC + WA/Indian Ocean)",
+    "mode": "Regional CEMAC champion expansion",
+    "firstRegion": "Central Africa (CEMAC)",
+    "summary": "BGFIBank is a Central African banking group that expanded across CEMAC and into select West African and Indian Ocean markets — a reminder that pan-African stories also start in Libreville, not only Lagos or Johannesburg.",
+    "growth": [
+      {
+        "year": 2000,
+        "countries": 1
+      },
+      {
+        "year": 2010,
+        "countries": 6
+      },
+      {
+        "year": 2018,
+        "countries": 9
+      },
+      {
+        "year": 2024,
+        "countries": 10
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1971–2005",
+        "countries": 2,
+        "region": "CEMAC",
+        "entry": "Gabon base + neighbours",
+        "markets": [
+          "Gabon",
+          "early CEMAC"
+        ],
+        "event": "Build a credible regional bank in oil-linked Central Africa.",
+        "advisors": {
+          "financial": "Group founders / regional investors",
+          "legal": "COBAC regulatory framework",
+          "other": "Regional supervisor logic (COBAC)"
+        },
+        "vendors": [
+          "Regional correspondent setup",
+          "Corporate energy/trade focus"
+        ]
+      },
+      {
+        "year": "2006–18",
+        "countries": 9,
+        "region": "CEMAC + WA + IO",
+        "entry": "Subsidiaries / acquisitions",
+        "markets": [
+          "Cameroon",
+          "Congo",
+          "Equatorial Guinea",
+          "Benin",
+          "Côte d'Ivoire",
+          "Madagascar"
+        ],
+        "event": "Multi-country expansion inside and beyond CEMAC.",
+        "advisors": {
+          "financial": "BGFI corporate development; local FAs",
+          "legal": "COBAC + WAEMU counsel",
+          "other": "Regional group holding architecture"
+        },
+        "vendors": [
+          "Group IT",
+          "Trade & corporate platforms"
+        ]
+      },
+      {
+        "year": "2018–24",
+        "countries": 10,
+        "region": "Consolidate region",
+        "entry": "Deepen",
+        "markets": [
+          "Network optimisation"
+        ],
+        "event": "Focus on returns and digital inside the existing footprint.",
+        "advisors": {
+          "financial": "Group strategy",
+          "legal": "Multi-regulator reporting",
+          "other": "CEMAC macroeconomic cycles as expansion governor"
+        },
+        "vendors": [
+          "Digital banking roll-out",
+          "Risk systems"
+        ]
+      }
+    ],
+    "advice": [
+      "Regional currency/supervisory unions (CEMAC, WAEMU) lower expansion friction",
+      "Oil/trade economies create corporate banking beachheads",
+      "Watch commodity cycles when underwriting Central Africa growth"
+    ]
+  }
+],
 
   peerLessons: [
-    { title: "When they expanded", body: "Waves clustered after home reforms (Nigeria 2005–06), home saturation (Morocco mid-2000s), and seller exits (European banks leaving Africa)." },
-    { title: "First regions", body: "Almost everyone started in a linguistic/legal neighbourhood: ECOWAS, francophone WAEMU/CEMAC, or SADC/EAC — then jumped corridors." },
-    { title: "Advisors pattern", body: "Landmark network buys attract named FAs/legal (e.g. Exotix + DLA Piper on Access–Stanchart; Goldman on ICBC–Standard). Serial greenfields are mostly in-house + local counsel." },
-    { title: "Vendors pattern", body: "Day-1 value is TSA + core banking continuity; medium-term value is group shared services, brand, and a repeatable digital stack." },
-    { title: "What worked", body: "Corridor logic, language/legal affinity, becoming locally systemic, and long ownership horizons." },
+    { title: "Scale ≠ pan-African", body: "NBE, CIB, and Banque Misr rank in Africa’s top tier on capital while staying Egypt-centred. Country count is a strategy choice, not a league table requirement." },
+    { title: "When they expanded", body: "Waves clustered after home reforms (Nigeria 2005–06), home saturation (Morocco mid-2000s), EAC consolidation, and European seller exits." },
+    { title: "First regions", body: "SADC for SA banks, ECOWAS for Nigerians, WAEMU/CEMAC for Moroccans and BGFI, EAC for Kenyans — affinity first, then corridors." },
+    { title: "Advisors pattern", body: "Landmark network buys attract named FAs/legal (Exotix + DLA Piper; Goldman on ICBC–Standard). Serial greenfields and alliances are mostly in-house." },
+    { title: "Vendors pattern", body: "Day-1 value is TSA + core continuity; medium-term value is group shared services, brand, and a repeatable digital/agency stack." },
     { title: "What hurt", body: "Flag collecting, under-capitalised subsidiaries, integration fatigue, and weak host-regulator relationships." }
   ],
 
