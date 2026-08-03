@@ -553,42 +553,55 @@ button { font-family: inherit; }
 .growth-bars {
   display: flex;
   align-items: flex-end;
-  gap: 0.45rem;
-  min-height: 140px;
-  padding-top: 0.5rem;
+  gap: 0.5rem;
+  height: 140px;
+  padding: 0.25rem 0.15rem 0;
+  border-bottom: 2px solid rgba(92, 38, 132, 0.18);
 }
 .growth-bar {
   flex: 1;
+  min-width: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.25rem;
-  min-width: 0;
+  gap: 0.35rem;
 }
-.growth-bar i {
+.growth-bar-col {
+  width: 100%;
+  max-width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+.growth-bar-fill {
   display: block;
   width: 100%;
-  max-width: 42px;
-  background: linear-gradient(180deg, var(--fcmb-yellow), var(--fcmb-purple));
-  border-radius: 3px 3px 0 0;
-  transition: transform 0.15s ease, filter 0.15s ease;
+  min-height: 6px;
+  background: linear-gradient(180deg, var(--fcmb-yellow) 0%, var(--fcmb-purple) 100%);
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+  transition: filter 0.15s ease, transform 0.15s ease;
 }
-.growth-bar:hover i {
-  transform: scaleY(1.04);
+.growth-bar:hover .growth-bar-fill {
   filter: brightness(1.08);
+  transform: translateY(-2px);
 }
-.growth-bar em {
-  font-style: normal;
+.growth-val {
   font-size: 0.72rem;
   font-weight: 800;
   color: var(--fcmb-purple-deep);
+  line-height: 1;
 }
-.growth-bar span {
+.growth-year-label {
   font-size: 0.62rem;
   font-weight: 700;
   color: var(--muted);
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .growth-timeline {

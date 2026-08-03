@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803c</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803d</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -98,22 +98,25 @@
 
   function growthChart(growth) {
     if (!growth?.length) return "";
-    const max = Math.max(...growth.map((g) => g.countries));
+    const max = Math.max(...growth.map((g) => g.countries), 1);
+    const chartH = 140;
     return `
       <div class="growth-chart" aria-label="Country count over time">
         <div class="growth-chart-head">
           <h4>Countries over time</h4>
           <span>Hover / tap a bar for the count</span>
         </div>
-        <div class="growth-bars">
+        <div class="growth-bars" style="height:${chartH}px">
           ${growth
             .map((g) => {
-              const h = Math.max(8, Math.round((g.countries / max) * 100));
+              const h = Math.max(6, Math.round((g.countries / max) * chartH));
               return `
-              <div class="growth-bar" style="--h:${h}%" title="${g.year}: ${g.countries} countries">
-                <i style="height:${h}%"></i>
-                <em>${g.countries}</em>
-                <span>${g.year}</span>
+              <div class="growth-bar" title="${g.year}: ${g.countries} countries">
+                <div class="growth-bar-col">
+                  <span class="growth-val">${g.countries}</span>
+                  <div class="growth-bar-fill" style="height:${h}px"></div>
+                </div>
+                <span class="growth-year-label">${g.year}</span>
               </div>`;
             })
             .join("")}
