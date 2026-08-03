@@ -507,38 +507,188 @@ button { font-family: inherit; }
   box-shadow: 0 0 0 3px rgba(253, 185, 19, 0.25);
 }
 
-.timeline {
+.peer-rich-head {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.callout.first-region { margin-top: 0.85rem; }
+.timeline-title {
+  margin: 1.5rem 0 0.9rem;
+  color: var(--fcmb-purple-deep);
+  font-size: 1.15rem;
+}
+.source-note {
+  margin: 1.2rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.growth-chart {
+  padding: 1rem 1.1rem 0.85rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.growth-chart-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+.growth-chart-head h4 {
+  margin: 0;
+  color: var(--fcmb-purple);
+  font-size: 0.92rem;
+}
+.growth-chart-head span {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.growth-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.45rem;
+  min-height: 140px;
+  padding-top: 0.5rem;
+}
+.growth-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  min-width: 0;
+}
+.growth-bar i {
+  display: block;
+  width: 100%;
+  max-width: 42px;
+  background: linear-gradient(180deg, var(--fcmb-yellow), var(--fcmb-purple));
+  border-radius: 3px 3px 0 0;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.growth-bar:hover i {
+  transform: scaleY(1.04);
+  filter: brightness(1.08);
+}
+.growth-bar em {
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--fcmb-purple-deep);
+}
+.growth-bar span {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: -0.02em;
+}
+
+.growth-timeline {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-left: 2px solid rgba(92, 38, 132, 0.2);
 }
-.timeline li {
+.growth-step {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 0.85rem;
+}
+.growth-step-rail {
   position: relative;
-  padding: 0 0 1rem 1.15rem;
-  color: var(--ink-soft);
-  font-size: 0.92rem;
-  font-weight: 500;
 }
-.timeline li::before {
+.growth-step-rail::before {
   content: "";
   position: absolute;
-  left: -6px;
-  top: 0.3rem;
-  width: 10px;
-  height: 10px;
+  left: 8px;
+  top: 0.4rem;
+  bottom: -0.4rem;
+  width: 2px;
+  background: rgba(92, 38, 132, 0.18);
+}
+.growth-step:last-child .growth-step-rail::before { display: none; }
+.growth-dot {
+  position: absolute;
+  left: 3px;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: var(--fcmb-yellow);
   border: 2px solid var(--fcmb-purple);
+  z-index: 1;
 }
-.timeline .year {
-  display: block;
+.growth-step-body {
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1rem;
+}
+.growth-step:last-child .growth-step-body {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.growth-step-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.growth-year {
+  color: var(--fcmb-purple-deep);
+  font-size: 1rem;
+}
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--fcmb-purple);
+  color: var(--paper);
+  font-size: 0.7rem;
   font-weight: 800;
-  font-size: 0.78rem;
-  color: var(--fcmb-purple);
+  letter-spacing: 0.02em;
+}
+.chip.soft {
+  background: rgba(253, 185, 19, 0.18);
+  color: var(--fcmb-purple-deep);
+}
+.growth-event {
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.growth-markets {
+  margin: 0 0 0.85rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+.advisor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+.advisor-grid .mini-card h4 {
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.15rem;
+  letter-spacing: 0.05em;
+}
+.advisor-grid .mini-card p {
+  font-size: 0.84rem;
+}
+
+@media (max-width: 960px) {
+  .peer-rich-head,
+  .advisor-grid { grid-template-columns: 1fr; }
 }
 
 .callout {

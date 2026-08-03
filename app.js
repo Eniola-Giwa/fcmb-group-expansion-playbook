@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803b</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803c</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -96,6 +96,75 @@
     });
   }
 
+  function growthChart(growth) {
+    if (!growth?.length) return "";
+    const max = Math.max(...growth.map((g) => g.countries));
+    return `
+      <div class="growth-chart" aria-label="Country count over time">
+        <div class="growth-chart-head">
+          <h4>Countries over time</h4>
+          <span>Hover / tap a bar for the count</span>
+        </div>
+        <div class="growth-bars">
+          ${growth
+            .map((g) => {
+              const h = Math.max(8, Math.round((g.countries / max) * 100));
+              return `
+              <div class="growth-bar" style="--h:${h}%" title="${g.year}: ${g.countries} countries">
+                <i style="height:${h}%"></i>
+                <em>${g.countries}</em>
+                <span>${g.year}</span>
+              </div>`;
+            })
+            .join("")}
+        </div>
+      </div>`;
+  }
+
+  function timelineCards(timeline) {
+    return `
+      <ol class="growth-timeline">
+        ${timeline
+          .map(
+            (t) => `
+          <li class="growth-step">
+            <div class="growth-step-rail" aria-hidden="true">
+              <span class="growth-dot"></span>
+            </div>
+            <div class="growth-step-body">
+              <div class="growth-step-top">
+                <strong class="growth-year">${t.year}</strong>
+                <span class="count-badge">${t.countries} countries</span>
+                <span class="chip">${t.region}</span>
+                <span class="chip soft">${t.entry}</span>
+              </div>
+              <p class="growth-event">${t.event}</p>
+              <p class="growth-markets"><strong>Markets / deal:</strong> ${t.markets.join(" · ")}</p>
+              <div class="advisor-grid">
+                <div class="mini-card">
+                  <h4>Financial / deal advisors</h4>
+                  <p>${t.advisors.financial}</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Legal advisors</h4>
+                  <p>${t.advisors.legal}</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Other counsel / notes</h4>
+                  <p>${t.advisors.other}</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Vendors / platforms</h4>
+                  <ul>${t.vendors.map((v) => `<li>${v}</li>`).join("")}</ul>
+                </div>
+              </div>
+            </div>
+          </li>`
+          )
+          .join("")}
+      </ol>`;
+  }
+
   function renderPeers() {
     const tablist = $("#peer-tabs");
     const panels = $("#peer-panels");
@@ -114,8 +183,8 @@
       .map(
         (p, i) => `
       <div class="panel${i === 0 ? " is-active" : ""}" id="peer-${p.id}" role="tabpanel">
-        <div class="panel-card">
-          <div class="two-col">
+        <div class="panel-card peer-rich">
+          <div class="peer-rich-head">
             <div>
               <h2>${p.name}</h2>
               <p class="intro">${p.summary}</p>
@@ -124,31 +193,25 @@
                 <span class="chip">${p.reach}</span>
                 <span class="chip">${p.mode}</span>
               </div>
-              <ul class="timeline">
-                ${p.timeline
-                  .map((t) => `<li><span class="year">${t.year}</span>${t.event}</li>`)
-                  .join("")}
-              </ul>
+              <div class="callout first-region">
+                <strong>First region</strong>
+                ${p.firstRegion}
+              </div>
             </div>
-            <div>
-              <div class="mini-card">
-                <h4>What to steal from their playbook</h4>
-                <ul>${p.advice.map((a) => `<li>${a}</li>`).join("")}</ul>
-              </div>
-              <div class="grid-2" style="margin-top:0.9rem">
-                ${data.peerLessons
-                  .slice(0, 2)
-                  .map((l) => `<div class="mini-card"><h4>${l.title}</h4><p>${l.body}</p></div>`)
-                  .join("")}
-              </div>
+            <div class="mini-card">
+              <h4>What to steal from their playbook</h4>
+              <ul>${p.advice.map((a) => `<li>${a}</li>`).join("")}</ul>
             </div>
           </div>
+          ${growthChart(p.growth)}
+          <h3 class="timeline-title">Expansion timeline — countries, regions, advisors &amp; vendors</h3>
+          ${timelineCards(p.timeline)}
+          <p class="source-note">Country counts are approximate African banking footprints at period end, synthesised from annual reports, IMF/World Bank pan-African banking research, and deal announcements. Advisor names shown where publicly reported; otherwise noted as in-house / local counsel.</p>
         </div>
       </div>`
       )
       .join("");
 
-    // lessons overview as last tab
     const lessonsBtn = document.createElement("button");
     lessonsBtn.className = "tab";
     lessonsBtn.dataset.target = "peer-lessons";
