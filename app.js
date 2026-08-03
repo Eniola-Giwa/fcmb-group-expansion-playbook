@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803g</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803h</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -63,9 +63,16 @@
 
     const toggle = $(".nav-toggle");
     const nav = $(".primary-nav .nav");
-    toggle?.addEventListener("click", () => {
-      const open = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(open));
+    const setNav = (open) => {
+      nav?.classList.toggle("is-open", open);
+      document.body.classList.toggle("nav-open", open);
+      toggle?.setAttribute("aria-expanded", String(open));
+      toggle?.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    toggle?.addEventListener("click", () => setNav(!nav.classList.contains("is-open")));
+    $$("a", nav).forEach((link) => link.addEventListener("click", () => setNav(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setNav(false);
     });
   }
 
@@ -238,6 +245,17 @@
     panels.appendChild(lessonsPanel);
 
     bindTabs($("[data-tabs='peers']"));
+
+    // Keep active peer tab visible on narrow screens
+    const activePeerTab = $(".tab.is-active", tablist);
+    activePeerTab?.scrollIntoView({ inline: "center", block: "nearest", behavior: "instant" });
+    tablist.addEventListener("click", (e) => {
+      const tab = e.target.closest(".tab");
+      if (!tab) return;
+      requestAnimationFrame(() => {
+        tab.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+      });
+    });
   }
 
   function decisionBlocks(decisions) {
