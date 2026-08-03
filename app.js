@@ -32,15 +32,18 @@
             <small>My Bank and I · Across Africa</small>
           </span>
         </a>
+        <a class="btn primary small" href="https://www.fcmb.com/" target="_blank" rel="noopener">fcmb.com</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="primary-nav">
         <nav class="nav" aria-label="Primary">
           ${NAV.map(
             (n) =>
               `<a href="${n.href}" class="${n.id === page ? "is-active" : ""}">${n.label}</a>`
           ).join("")}
         </nav>
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
       </div>
     `;
 
@@ -49,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803b</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -59,7 +62,7 @@
     document.body.appendChild(footer);
 
     const toggle = $(".nav-toggle");
-    const nav = $(".nav");
+    const nav = $(".primary-nav .nav");
     toggle?.addEventListener("click", () => {
       const open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(open));
