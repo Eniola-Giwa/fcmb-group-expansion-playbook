@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selection Process · FCMB Expansion Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="selection">
+  <main class="page">
+    <header class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow">Pillar 02</p>
+        <h1>Selection Process</h1>
+        <p>Filter countries first, then choose greenfield or brownfield, then pick the entry vehicle.</p>
+      </div>
+    </header>
+    <div class="page-body" data-tabs="selection">
+      <div class="tabs" role="tablist" aria-label="Selection topics">
+        <button class="tab is-active" data-target="sel-filters" role="tab" aria-selected="true">Country filters</button>
+        <button class="tab" data-target="sel-modes" role="tab" aria-selected="false">Greenfield vs brownfield</button>
+        <button class="tab" data-target="sel-pathways" role="tab" aria-selected="false">Entry pathways</button>
+      </div>
+
+      <div class="panel is-active" id="sel-filters" role="tabpanel">
+        <div class="panel-card">
+          <h2>Country filter cascade</h2>
+          <p class="intro">Three levels of filtering — from macro attractiveness to entry realism.</p>
+          <div id="panel-filters"></div>
+        </div>
+      </div>
+
+      <div class="panel" id="sel-modes" role="tabpanel">
+        <div class="panel-card">
+          <h2>Greenfield vs brownfield</h2>
+          <p class="intro">Toggle the path. Default to brownfield when a clean franchise exists.</p>
+          <div data-tabs="modes">
+            <div class="tabs" id="mode-tabs" role="tablist" aria-label="Entry mode"></div>
+            <div id="mode-panels"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="sel-pathways" role="tabpanel">
+        <div class="panel-card">
+          <h2>Entry pathways</h2>
+          <p class="intro">Bank, NBFI / Savings &amp; Loans, or build from license.</p>
+          <div id="panel-pathways"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

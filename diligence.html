@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Due Diligence · FCMB Expansion Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="diligence">
+  <main class="page">
+    <header class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow">Pillar 03</p>
+        <h1>Due Diligence Process</h1>
+        <p>Quality benchmarks, extended workstreams, and a live go / no-go gate — each in its own tab.</p>
+      </div>
+    </header>
+    <div class="page-body" data-tabs="diligence">
+      <div class="tabs" role="tablist" aria-label="Diligence topics">
+        <button class="tab is-active" data-target="dd-bench" role="tab" aria-selected="true">Quality benchmarks</button>
+        <button class="tab" data-target="dd-min" role="tab" aria-selected="false">Minimum requirements</button>
+        <button class="tab" data-target="dd-streams" role="tab" aria-selected="false">Extended coverage</button>
+        <button class="tab" data-target="dd-gate" role="tab" aria-selected="false">Go / No-Go gate</button>
+      </div>
+
+      <div class="panel is-active" id="dd-bench" role="tabpanel">
+        <div class="panel-card">
+          <h2>Quality benchmarks</h2>
+          <p class="intro">Franchise must clear these before heavy diligence spend.</p>
+          <ul class="list">
+            <li>Franchise leadership or clear #1–#3 path in target segment</li>
+            <li>Model adjacency to Credit Direct / FCMB capabilities</li>
+            <li>De-risked cashflows (e.g. payroll deduction) or diversifiable credit</li>
+            <li>Capital adequacy headroom after purchase-price adjustments</li>
+            <li>Management retention possible; culture not hostile to change</li>
+            <li>Regulatory path to digital products within 12 months</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" id="dd-min" role="tabpanel">
+        <div class="panel-card">
+          <h2>Minimum diligence requirements</h2>
+          <p class="intro">Non-negotiable workstreams before any binding offer.</p>
+          <ul class="list">
+            <li>Financial &amp; tax (3–5 years audited + management accounts)</li>
+            <li>Credit / IFRS 9 vs local regulator provisioning gap</li>
+            <li>Legal: title, licenses, material contracts, litigation</li>
+            <li>IT / cyber: core banking, DR, vendor lock-in</li>
+            <li>HR &amp; key-person / profit-share arrangements</li>
+            <li>AML / KYC / sanctions &amp; consumer protection</li>
+            <li>Regulatory findings log and remediation cost</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" id="dd-streams" role="tabpanel">
+        <div class="panel-card">
+          <h2>Extended coverage laundry list</h2>
+          <p class="intro">Legal, tech, financial, credit, tax, and conduct deep-dives.</p>
+          <div id="panel-streams"></div>
+        </div>
+      </div>
+
+      <div class="panel" id="dd-gate" role="tabpanel">
+        <div class="gate">
+          <h3>Go / No-Go gate</h3>
+          <p>Tick what has been cleared. Red tags are hard stops unless priced or indemnified.</p>
+          <div class="gate-controls">
+            <button type="button" class="btn ghost small" id="gate-all">Mark all cleared</button>
+            <button type="button" class="btn ghost small" id="gate-reset">Reset</button>
+          </div>
+          <div class="gate-list" id="gate-list"></div>
+          <div class="gate-result" id="gate-result"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
