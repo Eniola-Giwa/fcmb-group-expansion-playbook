@@ -52,7 +52,7 @@
     footer.innerHTML = `
       <div class="footer-accent"></div>
       <div class="footer-inner">
-        <span>© FCMB Group Expansion Playbook · build 20260803d</span>
+        <span>© FCMB Group Expansion Playbook · build 20260803e</span>
         <a href="https://github.com/Eniola-Giwa/fcmb-group-expansion-playbook" target="_blank" rel="noopener">GitHub</a>
       </div>
     `;
@@ -241,6 +241,24 @@
     bindTabs($("[data-tabs='peers']"));
   }
 
+  function decisionBlocks(decisions) {
+    if (!decisions?.length) return "";
+    return `
+      <div class="decision-stack">
+        ${decisions
+          .map(
+            (d, i) => `
+          <article class="decision-card">
+            <p class="decision-label">Decision ${i + 1}</p>
+            <h4>${d.ask}</h4>
+            <p class="do"><strong>Do this.</strong> ${d.do}</p>
+            <p class="trap"><strong>Trap.</strong> ${d.trap}</p>
+          </article>`
+          )
+          .join("")}
+      </div>`;
+  }
+
   function renderStakeholders() {
     const tablist = $("#stake-tabs");
     const panels = $("#stake-panels");
@@ -259,10 +277,13 @@
         const s = data.stakeholders[k];
         return `
         <div class="panel${i === 0 ? " is-active" : ""}" id="stake-${k}" role="tabpanel">
-          <div class="panel-card">
+          <div class="panel-card playbook-card">
+            <p class="objective">${s.objective}</p>
             <h2>${s.title}</h2>
-            <p class="intro">${s.intro}</p>
-            <ul class="list">${s.points.map((p) => `<li>${p}</li>`).join("")}</ul>
+            <p class="prose">${s.intro}</p>
+            ${decisionBlocks(s.decisions)}
+            <h3 class="playbook-subhead">How to run this track</h3>
+            <ol class="playbook-steps">${s.steps.map((step) => `<li>${step}</li>`).join("")}</ol>
             <div class="callout"><strong>Bayport / FCMB application</strong>${s.bayport}</div>
           </div>
         </div>`;
@@ -276,30 +297,26 @@
     const modeTabs = $("#mode-tabs");
     const modePanels = $("#mode-panels");
     const pathways = $("#panel-pathways");
+    const sf = data.selectionFilters;
 
-    if (filters) {
+    if (filters && sf) {
       filters.innerHTML = `
-        <div class="three-col">
-          <div class="mini-card">
-            <h4>Level I — Macro & market</h4>
-            <p>GDP scale, financial depth, political stability, FX convertibility, language fit, peer bank presence.</p>
-            <ul><li>Top 20 longlist</li><li>Exclude sanction / extreme FX risk</li><li>Prefer familiar legal systems</li></ul>
-          </div>
-          <div class="mini-card">
-            <h4>Level II — Capability fit</h4>
-            <p>Match market structure to FCMB strengths: SME, digital banking, corridors, UK–Africa remittances.</p>
-            <ul><li>Banking concentration & SME gap</li><li>Digital readiness</li><li>Payroll / consumer TAM</li></ul>
-          </div>
-          <div class="mini-card">
-            <h4>Level III — Entry realism</h4>
-            <p>Regulatory openness, foreign ownership, license upgrade path, willing sellers, time-to-market.</p>
-            <ul><li>Central bank openness</li><li>Local partner rules</li><li>Acquire vs build feasibility</li></ul>
-          </div>
+        <p class="prose">${sf.intro}</p>
+        <div class="level-stack">
+          ${sf.levels
+            .map(
+              (l) => `
+            <article class="level-card">
+              <h3>${l.title}</h3>
+              <p class="objective">${l.purpose}</p>
+              <p class="prose">${l.guidance}</p>
+              <p class="do"><strong>Decide.</strong> ${l.decide}</p>
+              <p class="outputs"><strong>Leave with:</strong> ${l.outputs.join(" · ")}</p>
+            </article>`
+            )
+            .join("")}
         </div>
-        <div class="callout" style="margin-top:1rem">
-          <strong>Source</strong>
-          Country screen approach drawn from FCMB’s Africa shortlist work with KPMG and the Ghana / Bayport entry case.
-        </div>`;
+        <div class="callout"><strong>Why Ghana cleared the cascade</strong>${sf.ghanaWhy}</div>`;
     }
 
     if (modeTabs && modePanels) {
@@ -317,11 +334,13 @@
           const m = data.modes[k];
           return `
           <div class="panel${i === 0 ? " is-active" : ""}" id="mode-${k}">
-            <div class="three-col">
-              <div class="mini-card"><h4>When to use</h4><ul>${m.when.map((x) => `<li>${x}</li>`).join("")}</ul></div>
-              <div class="mini-card"><h4>How to execute</h4><ul>${m.how.map((x) => `<li>${x}</li>`).join("")}</ul></div>
-              <div class="mini-card"><h4>Watch-outs</h4><ul>${m.risks.map((x) => `<li>${x}</li>`).join("")}</ul></div>
+            <p class="prose"><strong>${m.thesis}</strong></p>
+            <div class="narrative-grid">
+              <article class="mini-card"><h4>When to choose it</h4><p>${m.whenNarrative}</p></article>
+              <article class="mini-card"><h4>How to execute</h4><p>${m.howNarrative}</p></article>
+              <article class="mini-card"><h4>What can go wrong</h4><p>${m.riskNarrative}</p></article>
             </div>
+            <p class="do" style="margin-top:1rem"><strong>Decision rule.</strong> ${m.decide}</p>
             <div class="callout"><strong>FCMB default</strong>${m.fcmb}</div>
           </div>`;
         })
@@ -331,19 +350,20 @@
 
     if (pathways) {
       pathways.innerHTML = `
-        <div class="three-col">
-          <div class="mini-card">
-            <h4>Acquire a mid-tier bank</h4>
-            <p>Fastest full banking ops. Deposit base, branches, FX. Best when valuation is fair and the book is clean.</p>
-          </div>
-          <div class="mini-card">
-            <h4>Acquire a large MFB / S&amp;L</h4>
-            <p>Lower entry price, strong retail/payroll base. Plan a 12–24 month license upgrade for full bank capabilities.</p>
-          </div>
-          <div class="mini-card">
-            <h4>Greenfield license</h4>
-            <p>Full design control. Multi-year capital and distribution build. Use when no franchise meets quality gates.</p>
-          </div>
+        <p class="prose">Pick the vehicle after the country and the acquire-vs-build choice are settled. Each path answers a different time-to-capability problem.</p>
+        <div class="level-stack">
+          ${data.pathways
+            .map(
+              (p) => `
+            <article class="level-card">
+              <h3>${p.title}</h3>
+              <p class="do"><strong>When.</strong> ${p.when}</p>
+              <p class="prose"><strong>Why it works.</strong> ${p.why}</p>
+              <p class="prose"><strong>How to underwrite.</strong> ${p.how}</p>
+              <p class="trap"><strong>Do not.</strong> ${p.dont}</p>
+            </article>`
+            )
+            .join("")}
         </div>`;
     }
 
@@ -351,21 +371,62 @@
   }
 
   function renderDiligence() {
-    const streams = $("#panel-streams");
-    if (streams) {
-      streams.innerHTML = `
-        <div class="grid-3">
-          ${data.ddStreams
+    const dd = data.diligence;
+    const bench = $("#panel-benchmarks");
+    if (bench && dd?.benchmarks) {
+      bench.innerHTML = `
+        <p class="prose">${dd.benchmarks.intro}</p>
+        <div class="level-stack">
+          ${dd.benchmarks.items
             .map(
-              (s) => `
-            <div class="mini-card">
-              <h4>${s.name}</h4>
-              <ul>${s.items.map((i) => `<li>${i}</li>`).join("")}</ul>
-            </div>`
+              (item) => `
+            <article class="level-card compact">
+              <h3>${item.title}</h3>
+              <p class="prose">${item.body}</p>
+            </article>`
             )
             .join("")}
         </div>`;
     }
+
+    const mins = $("#panel-minimums");
+    if (mins && dd?.minimums) {
+      mins.innerHTML = `
+        <p class="prose">${dd.minimums.intro}</p>
+        <div class="level-stack">
+          ${dd.minimums.items
+            .map(
+              (item) => `
+            <article class="level-card compact">
+              <h3>${item.title}</h3>
+              <p class="prose">${item.body}</p>
+            </article>`
+            )
+            .join("")}
+        </div>`;
+    }
+
+    const streams = $("#panel-streams");
+    if (streams && dd?.streams) {
+      streams.innerHTML = `
+        <div class="level-stack">
+          ${dd.streams
+            .map(
+              (s) => `
+            <article class="level-card">
+              <h3>${s.name}</h3>
+              <p class="prose"><strong>Why this stream exists.</strong> ${s.why}</p>
+              <p class="do"><strong>Decision it feeds.</strong> ${s.decide}</p>
+              <p class="outputs"><strong>Look for:</strong></p>
+              <ul class="list">${s.lookFor.map((i) => `<li>${i}</li>`).join("")}</ul>
+            </article>`
+            )
+            .join("")}
+        </div>`;
+    }
+
+    const gateIntro = $("#gate-intro");
+    if (gateIntro && dd?.gateIntro) gateIntro.textContent = dd.gateIntro;
 
     const gateList = $("#gate-list");
     const gateResult = $("#gate-result");
@@ -438,6 +499,7 @@
     const levers = $("#panel-levers");
     if (levers) {
       levers.innerHTML = `
+        <p class="prose">Transformation is a portfolio of bets. Fund the levers that protect the thesis; sequence the rest. Ambition numbers are directional — the operating choices below are what management can actually run.</p>
         <div class="stat-row">
           <div class="stat"><strong>2.5×</strong><span>Loan book</span></div>
           <div class="stat"><strong>2.0×</strong><span>Customers</span></div>
@@ -445,9 +507,16 @@
           <div class="stat"><strong>&gt;20%</strong><span>Target ROE</span></div>
           <div class="stat"><strong>&lt;5%</strong><span>Norm. CoR</span></div>
         </div>
-        <div class="grid-3">
+        <div class="level-stack">
           ${data.levers
-            .map((l) => `<div class="mini-card"><h4>${l.title}</h4><p>${l.body}</p></div>`)
+            .map(
+              (l) => `
+            <article class="level-card compact">
+              <h3>${l.title}</h3>
+              <p class="prose">${l.body}</p>
+              <p class="do"><strong>Decision rule.</strong> ${l.decide}</p>
+            </article>`
+            )
             .join("")}
         </div>`;
     }
@@ -469,8 +538,20 @@
           const p = data.phases[k];
           return `
           <div class="panel${i === 0 ? " is-active" : ""}" id="phase-${k}">
-            <h3 style="margin:0 0 0.6rem;color:var(--fcmb-purple-deep)">${p.title}</h3>
-            <ul class="list">${p.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+            <h3 style="margin:0 0 0.45rem;color:var(--fcmb-purple-deep)">${p.title}</h3>
+            <p class="objective">${p.focus}</p>
+            <p class="prose">${p.narrative}</p>
+            <div class="level-stack" style="margin-top:1rem">
+              ${p.items
+                .map(
+                  (item) => `
+                <article class="level-card compact">
+                  <h3>${item.action}</h3>
+                  <p class="prose"><strong>Why now.</strong> ${item.why}</p>
+                </article>`
+                )
+                .join("")}
+            </div>
           </div>`;
         })
         .join("");
@@ -480,12 +561,25 @@
     const kpis = $("#panel-kpis");
     if (kpis) {
       kpis.innerHTML = `
+        <p class="prose">Day-100 KPIs are early-warning instruments, not the full value-creation case. If these are red, do not celebrate product launches.</p>
         <div class="kpi-table">
           <div class="kpi-row header"><span>Area</span><span>Day-100 target</span><span>Owner</span><span>Cadence</span></div>
           ${data.kpis
             .map(
               (k) =>
-                `<div class="kpi-row"><span>${k.area}</span><span>${k.target}</span><span>${k.owner}</span><span>${k.when}</span></div>`
+                `<div class="kpi-row"><span title="${k.why || ""}">${k.area}</span><span>${k.target}</span><span>${k.owner}</span><span>${k.when}</span></div>`
+            )
+            .join("")}
+        </div>
+        <div class="level-stack" style="margin-top:1rem">
+          ${data.kpis
+            .map(
+              (k) => `
+            <article class="level-card compact">
+              <h3>${k.area}</h3>
+              <p class="prose"><strong>Target:</strong> ${k.target} · <strong>Owner:</strong> ${k.owner} · <strong>${k.when}</strong></p>
+              <p class="do"><strong>Why it matters.</strong> ${k.why}</p>
+            </article>`
             )
             .join("")}
         </div>`;
@@ -494,6 +588,7 @@
     const horizon = $("#panel-horizon");
     if (horizon) {
       horizon.innerHTML = `
+        <p class="prose">${data.horizonNarrative || ""}</p>
         <ol class="horizon-list">
           <li><strong>2026</strong> — Invest and strengthen: capital, controls, people</li>
           <li><strong>2027</strong> — Digital platform live</li>
@@ -503,7 +598,7 @@
         </ol>
         <div class="callout">
           <strong>Transformation mandate</strong>
-          Not a turnaround theatre — a reinvention into a technology-enabled, diversified retail platform (Bayport Transformation Blueprint).
+          Not a turnaround theatre — a reinvention into a technology-enabled, diversified retail platform (Bayport Transformation Blueprint). Use the horizon to discipline dividend debates and CapEx sequencing.
         </div>`;
     }
 

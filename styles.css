@@ -868,6 +868,90 @@ button { font-family: inherit; }
 }
 .horizon-list li { margin-bottom: 0.5rem; }
 
+/* Playbook prose */
+.playbook-card .objective,
+.objective {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fcmb-purple);
+}
+.prose {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+.playbook-subhead {
+  margin: 1.4rem 0 0.65rem;
+  font-size: 1.05rem;
+  color: var(--fcmb-purple-deep);
+}
+.playbook-steps {
+  margin: 0 0 1.2rem;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+  line-height: 1.55;
+}
+.playbook-steps li { margin-bottom: 0.55rem; }
+
+.decision-stack,
+.level-stack {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.decision-card,
+.level-card {
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  border-left: 4px solid var(--fcmb-yellow);
+}
+.level-card.compact { border-left-color: var(--fcmb-purple); }
+.decision-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fcmb-purple);
+}
+.decision-card h4,
+.level-card h3 {
+  margin: 0 0 0.55rem;
+  color: var(--fcmb-purple-deep);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+.do, .trap, .outputs {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.do strong { color: var(--fcmb-purple-deep); }
+.trap strong { color: #9a3412; }
+.narrative-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.narrative-grid .mini-card p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 960px) {
+  .narrative-grid { grid-template-columns: 1fr; }
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: var(--paper-2);

@@ -495,197 +495,417 @@ window.PLAYBOOK = {
   stakeholders: {
     regulators: {
       title: "Regulators",
-      intro: "Central banks and supervisors are not a closing checklist — they are co-sponsors of legitimacy.",
-      points: [
-        "Pre-announce intent through licensed advisors; no surprises in the press",
-        "Lead with local capital permanence, deposit safety, jobs, and technology investment",
-        "Offer a written remediation plan for any open findings (classification, provisioning, returns)",
-        "Show group-level governance: board composition, AML standards, capital backstop",
-        "Map approval path: change of control, fit & proper, foreign ownership, product permissions",
-        "Maintain a single regulatory narrative across BoG / CBN / host supervisors"
+      objective: "Secure a durable license to operate — not a one-time approval.",
+      intro:
+        "Treat the central bank as a co-sponsor of legitimacy. If the supervisor cannot explain to the public why this owner is better for depositors, jobs, and financial stability, the transaction is already fragile — whatever the SPA says.",
+      decisions: [
+        {
+          ask: "Can we pre-engage without creating a market leak or hostile narrative?",
+          do: "Use licensed local advisors for quiet soundings. Align Group Comms, CBN, and host supervisor messaging before any press.",
+          trap: "Surprising the regulator via newspapers. That converts a partnership conversation into a defensive review."
+        },
+        {
+          ask: "What must be true for them to prefer us over a financial buyer?",
+          do: "Lead with permanence of capital, deposit safety, job continuity, technology investment, and rising local ownership — not IRR.",
+          trap: "Talking like private equity. Supervisors hear exit timelines as risk to the franchise."
+        },
+        {
+          ask: "Are open supervisory findings priced and owned?",
+          do: "Arrive with a written remediation plan (classification, provisioning, returns) and named owners + dates.",
+          trap: "Promising transformation while ignoring the findings log. Credibility dies on day one."
+        }
+      ],
+      steps: [
+        "Map the full approval path: change of control, fit & proper, foreign ownership caps, product permissions, and any license-upgrade sequence.",
+        "Build one narrative used everywhere — home group supervisor and host supervisor must hear the same story.",
+        "Show group-level governance: board composition, AML standards, and an explicit capital backstop if stress hits the subsidiary."
       ],
       bayport:
-        "Bayport materials emphasise BoG supervision unchanged, Accra HQ retained, and Ghanaian participation rising — regulatory comfort through local anchoring."
+        "Bayport materials emphasise BoG supervision unchanged, Accra HQ retained, and Ghanaian participation rising — regulatory comfort through local anchoring, not foreign takeover optics."
     },
     majority: {
       title: "Majority / Anchor Shareholders",
-      intro: "The anchor must look like a steward, not a trader. Horizon beats IRR theatre.",
-      points: [
-        "Commit permanent banking capital backed by the listed Group",
-        "Publish a multi-year ownership horizon (invest → digitise → multi-product → regional)",
-        "Align board rights with economic ownership; avoid hollow control",
-        "Ring-fence transformation funding (IT, credit stack, people) in the IC paper",
-        "Define dividend vs reinvestment policy for the first 36 months"
+      objective: "Prove the Group is a steward measured in decades.",
+      intro:
+        "The anchor shareholder sets the gravity of the deal. If IC, the board, and the host market believe you are trading the asset, every other stakeholder hedges. Your job is to make permanence operational — in capital, governance, and the transformation budget.",
+      decisions: [
+        {
+          ask: "Is the capital permanent, or is it a bridge to a later exit?",
+          do: "Commit listed-Group banking capital with a published ownership horizon: invest → digitise → multi-product → regional significance.",
+          trap: "Optimising for a three-year IRR while telling regulators you are a long-term bank."
+        },
+        {
+          ask: "Do board rights match economic ownership without hollowing local voice?",
+          do: "Align control rights with the SHA, but leave real reserved matters and board seats for institutional locals where politics requires it.",
+          trap: "75% ownership with 100% colonial operating style. That fails the legitimacy test even if legal."
+        },
+        {
+          ask: "Is transformation funded, or is it a slide?",
+          do: "Ring-fence IT, credit-stack, and people budgets in the IC paper. Define dividend vs reinvestment for the first 36 months.",
+          trap: "Buying the franchise and starving the rebuild. Peers who under-capitalise subsidiaries collect flags, not franchises."
+        }
+      ],
+      steps: [
+        "Write the stewardship case before the valuation case — supervisors and minorities read intent first.",
+        "Put the 5–10 year horizon in board minutes and the public narrative (as FCMB did for Bayport: 2026→2035+).",
+        "Make Group CFO and CRO co-owners of subsidiary capital adequacy post-close, not just the deal team."
       ],
       bayport:
-        "FCMB Bank as ~75% anchor; listed FCMB Group as long-term steward, not PE exit capital."
+        "FCMB Bank as ~75% anchor; listed FCMB Group as long-term steward. Horizon language in the SSNIT/BoG materials is deliberate: decades, not deal cycles."
     },
     minority: {
       title: "Minority Shareholders",
-      intro: "Minorities are political capital. Structure them as partners with voice, not passengers.",
-      points: [
-        "Increase meaningful local ownership (pensions, management, strategic locals)",
-        "Board seats for institutional minorities (e.g. pension funds)",
-        "Consider preference shares for priority income where politics requires it",
-        "Protect information rights and related-party transaction rules in SHA",
-        "Communicate value creation in local currency and local jobs, not only USD IRR"
+      objective: "Convert political risk into aligned ownership.",
+      intro:
+        "In African financial services, minorities are rarely just financial. Pension funds, management, and strategic locals are how the franchise stays nationally legitimate. Design them as partners with voice — or they become blockers at approval, integration, or the next capital raise.",
+      decisions: [
+        {
+          ask: "Who must own a visible stake for this to be politically durable?",
+          do: "Increase meaningful local ownership — pensions first, then management. Prefer institutions with generational horizons.",
+          trap: "Token 1–2% locals for optics. Everyone sees through it, including the regulator."
+        },
+        {
+          ask: "What rights make minorities constructive rather than obstructive?",
+          do: "Board seats for institutional minorities, information rights, and tight related-party rules in the SHA. Consider preference shares when priority income unlocks consent.",
+          trap: "Giving vetoes on ordinary operations. Partnership ≠ paralysis."
+        },
+        {
+          ask: "How do we talk about value?",
+          do: "Report in local currency, local jobs, pensioner outcomes, and tax — not only USD IRR to Group.",
+          trap: "A Lagos-only value story in Accra. It invites nationalist pushback."
+        }
+      ],
+      steps: [
+        "Model the ownership stack early — before LOI — so price and politics are solved together.",
+        "Run a dedicated track with the pension / strategic minority; do not bury them inside sell-side process.",
+        "Put management equity on day one if retention is part of the thesis (it usually is)."
       ],
       bayport:
-        "SSNIT from ~1.1% to 15% (+ optional 5% prefs); management 10% — Ghanaian participation up to ~30%."
+        "SSNIT from ~1.1% to 15% (+ optional 5% prefs) and management 10% lifts Ghanaian participation toward ~30% — the political core of the partnership narrative."
     },
     advisors: {
       title: "Advisors",
-      intro: "Buy judgment, not decks. Scope advisors to gate decisions.",
-      points: [
-        "Country screen partner (e.g. KPMG-style macro/capability filter)",
-        "Financial / tax DD with IFRS 9 vs local regulator reconciliation",
-        "Legal counsel in home and host jurisdiction; SPA + SHA architects",
-        "Credit DD specialist for staging, ECL, and collateral reality",
-        "IT / cyber advisor for core banking, DR, and migration cost",
-        "Communications advisor for regulator, staff, and public narrative"
+      objective: "Buy decisions, not documents.",
+      intro:
+        "Advisors earn their fee when they change a go / no-go or a price. Scope every mandate to a gate. If a workstream cannot kill or reprice the deal, it is research — staff it lighter.",
+      decisions: [
+        {
+          ask: "Which gate does this advisor own?",
+          do: "Country screen → shortlist gate. Credit DD → price / PPA gate. Legal → closeability gate. IT → CapEx / TSA gate. Comms → approval narrative gate.",
+          trap: "Parallel decks with no single decision owner. IC then debates aesthetics."
+        },
+        {
+          ask: "Do we need a named FA or in-house execution?",
+          do: "Use named FAs/legal on landmark multi-country or politically sensitive buys (see Access–Stanchart: Exotix + DLA Piper). Use in-house + local counsel for serial greenfields.",
+          trap: "Hiring a bulge bracket to rubber-stamp a decision already made — or skipping specialists on credit/IT and discovering the hole in IC."
+        },
+        {
+          ask: "Who reconciles IFRS 9 vs local regulator reality?",
+          do: "Mandate explicit credit + financial DD to quantify the provisioning gap in cash terms for the SPA.",
+          trap: "Accepting accounting NBV as economic capital. Bayport-style ECL gaps are where value leaks."
+        }
+      ],
+      steps: [
+        "Build the advisor map at LOI: screen partner, FA (if needed), tax, legal (home+host), credit, IT/cyber, communications.",
+        "Require each advisor’s final page to answer: proceed / proceed with conditions / walk — with numbers.",
+        "Keep Group strategy as integrator so advisors do not become competing power centres."
       ],
       bayport:
-        "KPMG on Africa shortlist; Deloitte credit findings drove price adjustments and red-flag framing."
+        "KPMG shaped the Africa shortlist; Deloitte credit findings drove impairments and price adjustments — advisors that moved the gate, not just the appendix."
     },
     local: {
       title: "Local Expertise",
-      intro: "Local leaders own the franchise. Import playbooks, not colonial management.",
-      points: [
-        "Retain CEO / credit / collections cores unless diligence says otherwise",
-        "Management equity or LTIP to convert operators into owners",
-        "Second CDL / FCMB specialists as coaches, not permanent occupiers",
-        "Local board directors with regulatory and market credibility",
-        "Prefer local professional services where capability exists"
+      objective: "Import the playbook; keep the franchise Ghanaian / host-owned in spirit.",
+      intro:
+        "Credit Direct and FCMB know how to run digital payroll lending. Locals know the employers, the regulator’s temperament, and which field officers actually collect. Winning expansions coach; losing ones occupy.",
+      decisions: [
+        {
+          ask: "Who stays, who is coached, who exits?",
+          do: "Default to retaining CEO / credit / collections cores unless diligence shows integrity or capability failure. Second CDL/FCMB specialists as time-boxed coaches.",
+          trap: "Flying in a permanent expat layer. Talent leaves, regulator cools, customers feel the culture break."
+        },
+        {
+          ask: "How do we align incentives with stewardship?",
+          do: "Management equity or LTIP from day one so leaders think like owners on provisioning, conduct, and long-term ROE.",
+          trap: "Cash bonuses tied only to short-term disbursement growth — the fastest way to break credit."
+        },
+        {
+          ask: "Where must capability be local vs Group?",
+          do: "Local board directors with regulatory credibility; prefer host-country professional services when quality exists; Group owns standards and the credit engine design.",
+          trap: "Outsourcing judgment of the market to people who fly in monthly."
+        }
+      ],
+      steps: [
+        "Run a retention heat-map in diligence (key persons, flight risk, employment claims).",
+        "Announce the respect narrative early: partnership, not takeover — then staff the org chart to match.",
+        "Measure coaching success by local autonomy at day 100 and day 365, not by how many secondees remain."
       ],
       bayport:
-        "Existing Ghanaian management retained and empowered; 10% management ownership from day one."
+        "Existing Ghanaian management retained and empowered; 10% management ownership from day one is the operating expression of ‘African management’ in the SSNIT narrative."
     },
     vendors: {
       title: "Vendors & Ecosystem",
-      intro: "Vendors are integration risk. Prefer open, local-capable stacks with exit ramps.",
-      points: [
-        "Technical Services Agreement covering transition support from seller/parent IT",
-        "Core banking path (e.g. Fineract or equivalent) with migration budget",
-        "Payroll / government deduction counterparties (CAGD-type) as strategic stakeholders",
-        "Prefer Ghanaian / host-country vendors in transformation where capability exists",
-        "API and partner roadmap for embedded finance, payments, insurance"
+      objective: "Keep the bank running on day 2; own the stack by month 18.",
+      intro:
+        "Vendors are where integration dies quietly. Seller IT, payroll rails, core banking, and collections agencies can hold the franchise hostage. Negotiate exit ramps while everyone still wants the deal to close.",
+      decisions: [
+        {
+          ask: "What breaks if the seller’s parent turns off IT on day 30?",
+          do: "Sign a TSA with SLAs, knowledge transfer, and escrow where possible before close. Budget the migration (e.g. toward Fineract or Group standard) as part of IC — not a hopeful future project.",
+          trap: "Assuming ‘we’ll figure out IT after signing.’ That is how you buy an orphaned core."
+        },
+        {
+          ask: "Which counterparties are actually strategic stakeholders?",
+          do: "Treat payroll / government deduction rails (CAGD-type) as relationships to protect, not utilities. Map concentration and operational dependency.",
+          trap: "Ignoring employer and government rails until disbursement slows post-close."
+        },
+        {
+          ask: "Build, buy, or partner for the product roadmap?",
+          do: "Prefer host-country vendors where capability exists; keep APIs open for embedded finance, payments, and insurance partners.",
+          trap: "Locking into a closed stack that cannot support the CDL multi-product ambition."
+        }
+      ],
+      steps: [
+        "Diligence the core, DR, cyber, and vendor contracts with a migration cost range.",
+        "Put TSA + migration milestones in the integration scorecard reviewed by the steering committee.",
+        "Sequence: stabilise on TSA → pilot digital origination → migrate core → open partner APIs."
       ],
       bayport:
-        "Short-term TSA with Bayport Group IT; medium-term migration; preference for Ghanaian vendors in the transformation programme."
+        "Short-term TSA with Bayport Group IT, medium-term migration, and explicit preference for Ghanaian vendors in the transformation programme — legitimacy and resilience in one design choice."
     }
+  },
+
+  selectionFilters: {
+    intro:
+      "Do not fall in love with a target before the country earns a place on the shortlist. FCMB’s KPMG-style cascade exists to stop deal excitement from skipping strategy. Pass Level I before spending political capital; pass Level II before hiring a FA; pass Level III before signing an LOI.",
+    levels: [
+      {
+        title: "Level I — Macro & market screen",
+        purpose: "Decide which countries deserve any analytical time.",
+        guidance:
+          "Start from a top-20 African longlist by economic weight and financial depth. Kill markets with sanctions risk, unworkable FX convertibility, or chronic policy chaos. Prefer legal/language neighbourhoods the Group can actually operate in (English common-law familiarity helped Ghana).",
+        decide:
+          "If peers (GTBank, UBA, Access, Zenith, FirstBank) already operate successfully there, treat that as a positive signal on regulatory openness — not as proof the segment is uncontested.",
+        outputs: ["Longlist of ~15–20", "Kill list with one-line reasons", "Language / legal affinity flags"]
+      },
+      {
+        title: "Level II — Capability fit",
+        purpose: "Decide where FCMB’s strengths create unfair advantage.",
+        guidance:
+          "Match market structure to what the Group already wins at: SME finance gaps, digital readiness, payroll/consumer lending TAM, agric/business corridors, and UK–Africa remittance links via FCMB UK. A large market where you have no right to win is a tourist destination, not a strategy.",
+        decide:
+          "Promote countries where payroll or consumer lending is large enough to matter and where Credit Direct’s operating model can transfer within 24 months.",
+        outputs: ["Shortlist of ~8–12", "Capability scorecard", "TAM notes for retail lending"]
+      },
+      {
+        title: "Level III — Entry realism",
+        purpose: "Decide whether a path to ownership exists in time.",
+        guidance:
+          "Test foreign ownership rules, local partner requirements, license-upgrade feasibility, supervisor temperament, and whether willing sellers exist. Ghana worked because Nigerian banks already operate, BoG is respected, and a payroll S&L with a willing offshore seller was available.",
+        decide:
+          "Only now open target screening. If no clean brownfield exists and greenfield licensing is hostile or multi-year without strategic patience, park the country.",
+        outputs: ["Priority 3–5 markets", "Acquire vs build recommendation", "Regulatory path memo"]
+      }
+    ],
+    ghanaWhy:
+      "Ghana cleared all three levels: West Africa’s second-largest payroll lending opportunity, returning macro stability, high mobile-money adoption, familiar Nigerian-bank regulatory environment, and Bayport as an entry vehicle — making it the logical UK–Nigeria–Ghana corridor anchor."
   },
 
   modes: {
     brownfield: {
       title: "Brownfield (acquire)",
-      when: [
-        "Willing seller with a licensed franchise",
-        "Customer base and brand trust already exist",
-        "Need deposits, payroll rails, or branches immediately",
-        "Greenfield license would take 2–4+ years"
-      ],
-      how: [
-        "Screen bank vs MFB / Savings & Loans vs consumer lender",
-        "Price with DD adjustments (credit, tax, legal) baked into SPA",
-        "Structure earn-outs around recoveries / remediation",
-        "Plan license upgrade if entering via NBFI"
-      ],
-      risks: [
-        "Legacy asset quality and under-provisioning",
-        "IT debt and parent dependency",
-        "Culture and change resistance",
-        "Hidden related-party and profit-share contracts"
-      ],
+      thesis:
+        "Buy time, customers, and a license. Brownfield is the default when a franchise already sits on the rails you need — payroll deduction, deposits, branches, or brand trust — and a greenfield would burn 2–4 years you do not have.",
+      whenNarrative:
+        "Choose brownfield when there is a willing seller, the book can be diligence-priced, and the regulator will accept change of control faster than a new license. This is how Attijariwafa jumped via Crédit Agricole’s network, how Access bought Stanchart exits, and how FCMB approached Bayport.",
+      howNarrative:
+        "Screen the vehicle (bank vs MFB/S&L vs pure lender), then force every material DD finding into price, indemnity, or earn-out. If you enter via NBFI, write the license-upgrade plan into the IC paper so nobody is surprised at month 18.",
+      riskNarrative:
+        "You inherit under-provisioning, IT debt, culture, and odd profit-share contracts. That is not a reason to walk by default — it is a reason to price ruthlessly and staff integration before close.",
+      decide:
+        "If a clean Bayport-quality asset exists in a Level III market, prefer acquire-and-transform over build.",
       fcmb:
-        "Bayport path: acquire Ghana S&L payroll leader → transform with CDL stack → option to upgrade toward full banking over time."
+        "Bayport path: acquire Ghana S&L payroll leader → transform with CDL stack → option to upgrade toward full banking over time. Avoids multi-year greenfield while buying a de-risked repayment model."
     },
     greenfield: {
       title: "Greenfield (build)",
-      when: [
-        "No clean target passes the go-gate",
-        "Regulator is open to new licenses / sandbox",
-        "Product is digitally native and branch-light",
-        "Group can wait for multi-year J-curve"
-      ],
-      how: [
-        "Secure license / sandbox path before heavy CapEx",
-        "Import CDL digital origination and credit engine from day one",
-        "Hire local leadership early; build employer and payroll relationships",
-        "Start narrow (one product) then diversify"
-      ],
-      risks: [
-        "Slow customer acquisition vs entrenched payroll players",
-        "Higher regulatory scrutiny as a new foreign entrant",
-        "Capital drag before scale",
-        "No inherited deposit franchise"
-      ],
+      thesis:
+        "Build when you must own culture and architecture from day one — or when no target survives the go-gate. Greenfield is a multi-year capital commitment, not a romantic alternative to hard diligence.",
+      whenNarrative:
+        "Use greenfield when the shortlist market is attractive, the regulator is open to licenses or sandboxes, the product can start digitally and branch-light, and Group can endure a J-curve without political embarrassment.",
+      howNarrative:
+        "Secure the license path before heavy CapEx. Hire local leadership early. Import CDL origination and credit decisioning immediately. Start with one sharp product, win trust, then diversify — Ecobank’s early West Africa pattern, modernised.",
+      riskNarrative:
+        "Entrenched payroll players will out-distribute you; supervisors may scrutinise a new foreign entrant more harshly; you have no deposit franchise to fund growth cheaply.",
+      decide:
+        "If every brownfield fails credit/legal gates and the market still clears Level III, greenfield is honest. If you are choosing greenfield to avoid reading a bad book, you are not ready.",
       fcmb:
-        "Use greenfield when KPMG-style shortlist markets have no Bayport-quality asset — not as the default for payroll markets."
+        "Not the default for payroll markets with available franchises. Use when KPMG-style shortlist markets have no Bayport-quality asset and strategic patience exists."
     }
   },
 
-  ddStreams: [
+  pathways: [
     {
-      name: "Financial",
-      items: [
-        "Quality of earnings (accrual reversals, one-offs)",
-        "NBV vs economic capital after ECL true-up",
-        "Funding mix: deposits vs wholesale / shareholder loans",
-        "Related-party funding and transfer pricing",
-        "Working capital & liquidity stress under FX shocks"
-      ]
+      title: "Acquire a mid-tier bank",
+      when: "You need full banking permissions, FX, and deposits quickly, and valuations are not frothy.",
+      why: "Fastest path to a complete balance-sheet toolkit. Lower license friction because the entity already exists.",
+      how: "Underwrite asset quality and conduct risk harder than deposit franchise romance. Clean books only — or heavy PPA.",
+      dont: "Do not buy a mid-tier bank solely for the license if the credit culture is toxic; the license is not worth the NPL factory."
     },
     {
-      name: "Credit",
-      items: [
-        "IFRS 9 vs regulator staging reconciliation",
-        "Payroll deduction integrity and employer concentration",
-        "NPL formation, cure, and write-off history",
-        "Collections capability and agency dependence",
-        "Model risk: scorecards, overrides, policy exceptions"
-      ]
+      title: "Acquire a large MFB / Savings & Loans",
+      when: "Retail/payroll customers are the prize and full bank capabilities can wait 12–24 months.",
+      why: "Lower entry valuation, faster clearance, strong mass-market adjacency to Credit Direct.",
+      how: "Diligence payroll rails and provisioning gaps; write a BoG/CB license-upgrade programme with capital and governance milestones.",
+      dont: "Do not assume upgrade is automatic. Supervisors upgrade institutions that already behave like banks."
     },
     {
-      name: "Legal",
-      items: [
-        "License conditions and change-of-control consents",
-        "Material litigation and employment claims",
-        "Profit-share / founder / politician-linked contracts",
-        "Security perfection on collateral (if any)",
-        "SHA / articles: pre-emption, drag, tag, reserved matters"
-      ]
-    },
-    {
-      name: "Tax",
-      items: [
-        "Open audits and unreconciled levies",
-        "PAYE on allowances and contractor treatment",
-        "Withholding and VAT on intercompany services",
-        "Loss utilisation and deferred tax reality",
-        "SPA tax indemnity & escrow sequencing"
-      ]
-    },
-    {
-      name: "Technology",
-      items: [
-        "Core banking stability and vendor escrow",
-        "DR / BCP maturity and ISO posture",
-        "Cybersecurity, access control, privileged accounts",
-        "Data quality for credit decisioning",
-        "Migration cost and TSA exit plan"
-      ]
-    },
-    {
-      name: "Compliance & Conduct",
-      items: [
-        "AML / CFT programme effectiveness",
-        "Sanctions screening and PEP handling",
-        "Consumer protection / pricing transparency",
-        "Data protection (host privacy law)",
-        "Regulatory returns accuracy history"
-      ]
+      title: "Greenfield license",
+      when: "No franchise clears quality gates and the regulator will license a credible African banking group.",
+      why: "Full design control over credit, culture, and tech — the cleanest long-term architecture.",
+      how: "Capital plan, fit & proper bench, digital-first distribution, and a narrow MVP product until unit economics work.",
+      dont: "Do not greenfield a payroll market where a willing, diligence-able leader is for sale at a sane multiple — you are choosing delay."
     }
   ],
+
+  diligence: {
+    benchmarks: {
+      intro:
+        "Quality benchmarks are a pre-diligence filter. Their job is to stop you spending seven figures learning that the franchise was never strategically right. If a target fails these, walk or reframe — do not ‘diligence your way’ into conviction.",
+      items: [
+        {
+          title: "Segment position",
+          body: "Leadership or a credible path to #1–#3 in the target segment (e.g. payroll). Subscale tourists rarely justify Group attention."
+        },
+        {
+          title: "Model adjacency",
+          body: "The operating model must be teachable by Credit Direct / FCMB within 24 months. If you cannot name the playbook you will import, you are buying a science project."
+        },
+        {
+          title: "Cashflow quality",
+          body: "Prefer de-risked repayment (payroll deduction) or a clear path to diversify credit. Concentration is acceptable if rails are real and employer health is understood."
+        },
+        {
+          title: "Capital after truth",
+          body: "CAR/NBV must still make sense after honest ECL and tax true-ups. Buying insolvency with hope is not a strategy."
+        },
+        {
+          title: "People & culture",
+          body: "Key managers retainable; culture not hostile to digital change. A brilliant book with a fleeing credit team is a declining book."
+        },
+        {
+          title: "Regulatory product path",
+          body: "A realistic route to digital products within 12 months. Transformation thesis dies if permissions will not arrive."
+        }
+      ]
+    },
+    minimums: {
+      intro:
+        "Minimum requirements are the price of a binding offer. Skip one and you are gambling Group capital on an incomplete picture. Sequence them so credit and legal closeability finish before cosmetics.",
+      items: [
+        {
+          title: "Financial & tax",
+          body: "3–5 years audited plus management accounts. Quality of earnings must expose accrual theatre before you argue multiples."
+        },
+        {
+          title: "Credit reality",
+          body: "IFRS 9 vs local regulator staging reconciliation with a cash impact. This is usually the largest price adjuster (Bayport: material ECL gap)."
+        },
+        {
+          title: "Legal closeability",
+          body: "Title, licenses, change-of-control consents, material contracts, litigation. If you cannot close, valuation is trivia."
+        },
+        {
+          title: "IT & cyber",
+          body: "Core stability, DR, vendor lock-in, migration cost. Price the TSA and the exit."
+        },
+        {
+          title: "People contracts",
+          body: "HR, key-person dependencies, profit-share arrangements (including politically sensitive ones)."
+        },
+        {
+          title: "Conduct stack",
+          body: "AML/KYC/sanctions, consumer protection, and the supervisory findings log with remediation cost."
+        }
+      ]
+    },
+    streams: [
+      {
+        name: "Financial",
+        why: "To know whether reported earnings and NBV survive contact with reality.",
+        decide: "Reprice, restructure earn-outs, or walk if quality of earnings collapses after adjustments.",
+        lookFor: [
+          "Accrual reversals and one-offs dressing ROE",
+          "NBV vs economic capital after ECL true-up",
+          "Funding mix: deposits vs wholesale / shareholder loans",
+          "Related-party funding and transfer pricing",
+          "Liquidity under FX stress"
+        ]
+      },
+      {
+        name: "Credit",
+        why: "Credit is the business. Everything else is distribution and funding around it.",
+        decide: "Set PPA / indemnity / walk thresholds from staging gaps and collections truth — not from management’s NPL slide.",
+        lookFor: [
+          "IFRS 9 vs regulator staging gaps",
+          "Payroll deduction integrity and employer concentration",
+          "NPL formation, cure, write-off history",
+          "Collections capability vs agency dependence",
+          "Scorecard overrides and policy exceptions"
+        ]
+      },
+      {
+        name: "Legal",
+        why: "To confirm you can own and operate what you think you are buying.",
+        decide: "No clear change-of-control path = no deal. Uncapped litigation without indemnity = hard stop.",
+        lookFor: [
+          "License conditions and consents",
+          "Employment and other material litigation",
+          "Profit-share / founder / politically linked contracts",
+          "Collateral perfection (if any)",
+          "SHA mechanics: pre-emption, drag, tag, reserved matters"
+        ]
+      },
+      {
+        name: "Tax",
+        why: "Tax leaks are silent purchase-price reductions.",
+        decide: "Quantify, then escrow / indemnify / walk. Do not ‘monitor’ open audits into close.",
+        lookFor: [
+          "Open audits and unreconciled levies",
+          "PAYE on allowances / contractors",
+          "WHT and VAT on intercompany services",
+          "Deferred tax that will never be cash",
+          "SPA indemnity sequencing"
+        ]
+      },
+      {
+        name: "Technology",
+        why: "The transformation thesis assumes a stack you can run and improve.",
+        decide: "If migration CapEx + cyber risk exceeds IC tolerance, cut scope or walk.",
+        lookFor: [
+          "Core stability and vendor escrow",
+          "DR / BCP maturity",
+          "Privileged access and cyber posture",
+          "Data quality for decisioning",
+          "TSA exit plan and cost"
+        ]
+      },
+      {
+        name: "Compliance & Conduct",
+        why: "Conduct failures become capital and license failures.",
+        decide: "Material AML or consumer-protection gaps require funded remediation before go — or no-go.",
+        lookFor: [
+          "AML/CFT effectiveness",
+          "Sanctions and PEP handling",
+          "Pricing transparency / consumer protection",
+          "Data protection compliance",
+          "Regulatory returns accuracy history"
+        ]
+      }
+    ],
+    gateIntro:
+      "The go / no-go gate is not a celebration checklist. It is the last disciplined moment before Group capital is irreversibly committed. Hard stops mean walk or restructure; soft gaps mean price, indemnity, or timed conditions. Use the interactive score below in IC pre-reads."
+  },
 
   gateItems: [
     { id: "g1", label: "Strategic fit to retail / payroll / SME thesis", hard: true, weight: 2 },
@@ -703,54 +923,129 @@ window.PLAYBOOK = {
   ],
 
   levers: [
-    { title: "Commercial growth", body: "Accelerate acquisition, deepen relationships, grow wallet share." },
-    { title: "Digital lending & CX", body: "Digital-first origination and seamless customer journeys." },
-    { title: "Credit, risk & collections", body: "AI underwriting, risk-based pricing, predictive collections." },
-    { title: "Funding & capital", body: "Diversify funding, lower cost of funds, optimise capital." },
-    { title: "Operational efficiency", body: "Automation, LEAN operations, productivity uplift." },
-    { title: "Product diversification", body: "Move beyond payroll into adjacent products and partners." }
+    {
+      title: "Commercial growth",
+      body: "Win the right customers faster and deepen wallet share — without buying volume that credit cannot digest.",
+      decide: "Prioritise segments where payroll rails and CDL decisioning create a speed advantage."
+    },
+    {
+      title: "Digital lending & CX",
+      body: "Move origination from days to minutes. Experience is a risk control: straight-through journeys reduce error and leakage.",
+      decide: "Pilot in two branches before network roll-out; kill vanity features that do not cut TAT."
+    },
+    {
+      title: "Credit, risk & collections",
+      body: "Import risk-based pricing and predictive collections. The acquisition thesis dies if CoR stays legacy.",
+      decide: "Book the truth on impairments early; then run the recovery playbook weekly."
+    },
+    {
+      title: "Funding & capital",
+      body: "Shift from wholesale dependence toward retail deposits and capital efficiency so ROE can rise without reckless leverage.",
+      decide: "Deposit products are an integration workstream, not a marketing afterthought."
+    },
+    {
+      title: "Operational efficiency",
+      body: "Automation and LEAN remove 300–500 bps of CIR when branch theatre and manual credit are confronted honestly.",
+      decide: "Measure process kills, not slideware ‘synergies’."
+    },
+    {
+      title: "Product diversification",
+      body: "Escape mono-payroll gravity via top-ups, embedded finance, SME adjacencies, payments, and investment — sequenced, not simultaneous.",
+      decide: "One new product only after the digital payroll spine is stable."
+    }
   ],
 
   phases: {
     1: {
       title: "Days 1–30 — Stabilisation & control",
+      narrative:
+        "The first month is about not losing the franchise. Governance, truth on the book, supervisory trust, and people. Growth slogans wait.",
+      focus: "Control risk, retain talent, keep systems on.",
       items: [
-        "Joint steering committee with FCMB / CDL secondees",
-        "Address open regulator findings (classification, interest application, returns)",
-        "Book purchase-price impairment adjustments; start NPL recovery playbook",
-        "Full core-banking diagnostic; secure short-term TSA",
-        "Retain key credit & collections talent; deploy change leads"
+        {
+          action: "Stand up a joint steering committee with FCMB/CDL secondees",
+          why: "One accountability spine beats parallel crisis meetings."
+        },
+        {
+          action: "Attack open regulator findings immediately",
+          why: "Early remediation progress buys patience for the longer transformation."
+        },
+        {
+          action: "Book purchase-price impairments; start NPL recovery",
+          why: "Clean the windshield before you drive faster."
+        },
+        {
+          action: "Diagnose core banking; lock the TSA",
+          why: "Day-2 operations depend on seller systems until you migrate."
+        },
+        {
+          action: "Retain credit & collections cores; deploy change leads",
+          why: "The book walks out on two feet if culture feels like occupation."
+        }
       ]
     },
     2: {
       title: "Days 31–60 — Process & digital foundations",
+      narrative:
+        "Prove the thesis in miniature: instant decisioning, visible efficiency, deposit momentum, and a regulator who sees momentum.",
+      focus: "Show the operating model works here — not only in Nigeria.",
       items: [
-        "Pilot instant decisioning for payroll loans (days → minutes)",
-        "Identify 300–500 bps CIR reduction (branch, automation, shared services)",
-        "Accelerate retail deposits via digital savings / wallet products",
-        "Submit remediation plan and show early supervisory progress"
+        {
+          action: "Pilot instant payroll decisioning (days → minutes)",
+          why: "A live pilot beats a transformation brochure."
+        },
+        {
+          action: "Identify 300–500 bps CIR reduction opportunities",
+          why: "Efficiency funds the digital build and protects ROE."
+        },
+        {
+          action: "Push digital savings / wallet for deposits",
+          why: "Funding mix is strategy, not treasury trivia."
+        },
+        {
+          action: "Submit remediation plan; demonstrate early wins",
+          why: "Supervisory trust compounds — or evaporates."
+        }
       ]
     },
     3: {
       title: "Days 61–100 — Scale & value creation",
+      narrative:
+        "Only after control and a working pilot do you widen products, migrate the stack, and chase the ROE ambition.",
+      focus: "Scale what worked; institutionalise Group linkages.",
       items: [
-        "Introduce nano top-ups, embedded finance, SME payroll adjacencies",
-        "Begin phased core migration; deploy analytics & automated collections",
-        "Capital & ROE uplift actions toward 30%+ ROE in 12–24 months",
-        "Finalise Group TSA; knowledge transfer on lending, risk, CX"
+        {
+          action: "Add sequenced adjacencies (nano top-ups, embedded, SME payroll)",
+          why: "Diversification after the spine is stable — not before."
+        },
+        {
+          action: "Begin phased core migration; deploy analytics & automated collections",
+          why: "Own the stack; reduce TSA dependency."
+        },
+        {
+          action: "Execute capital & ROE uplift actions toward 30%+ in 12–24 months",
+          why: "IC believed a return path — day 100 must show the first gears turning."
+        },
+        {
+          action: "Finalise Group TSA; transfer lending, risk, and CX know-how",
+          why: "Independence with Group standards — the Absa lesson without the drama."
+        }
       ]
     }
   },
 
   kpis: [
-    { area: "Impairment", target: "Required book adjustment booked", owner: "CFO", when: "Day 30" },
-    { area: "NPL ratio", target: "<11.5% (from ~12.6%)", owner: "CRO", when: "Weekly" },
-    { area: "NPL coverage", target: ">0.6× (from ~0.2×)", owner: "CRO + CFO", when: "Monthly" },
-    { area: "Digital origination", target: "Live in 2 branches", owner: "CTO + COO", when: "Day 45" },
-    { area: "Decision time", target: "<4 hours (from multi-day)", owner: "CTO", when: "Weekly" },
-    { area: "Digital onboarding", target: ">70% completion", owner: "CTO", when: "Weekly" },
-    { area: "CIR", target: "<40% (from ~42.7%)", owner: "COO + CFO", when: "Monthly" },
-    { area: "Automation", target: ">15 core processes", owner: "CTO", when: "Day 90" },
-    { area: "Productivity", target: "+20% headcount productivity", owner: "COO", when: "Monthly" }
-  ]
+    { area: "Impairment", target: "Required book adjustment booked", owner: "CFO", when: "Day 30", why: "Truth before acceleration" },
+    { area: "NPL ratio", target: "<11.5% (from ~12.6%)", owner: "CRO", when: "Weekly", why: "Early de-risking signal" },
+    { area: "NPL coverage", target: ">0.6× (from ~0.2×)", owner: "CRO + CFO", when: "Monthly", why: "Protection against credit losses" },
+    { area: "Digital origination", target: "Live in 2 branches", owner: "CTO + COO", when: "Day 45", why: "Proof of concept" },
+    { area: "Decision time", target: "<4 hours (from multi-day)", owner: "CTO", when: "Weekly", why: "Speed advantage of CDL" },
+    { area: "Digital onboarding", target: ">70% completion", owner: "CTO", when: "Weekly", why: "CX and funnel health" },
+    { area: "CIR", target: "<40% (from ~42.7%)", owner: "COO + CFO", when: "Monthly", why: "Efficiency momentum" },
+    { area: "Automation", target: ">15 core processes", owner: "CTO", when: "Day 90", why: "Scalable operations base" },
+    { area: "Productivity", target: "+20% headcount productivity", owner: "COO", when: "Monthly", why: "Digital tools biting" }
+  ],
+
+  horizonNarrative:
+    "FCMB’s Bayport materials frame ownership as a decade-plus commitment: strengthen in 2026, digital platform in 2027, multi-product scale by 2028, regional significance by 2030, and a permanent franchise beyond 2035. Use that horizon in every IC debate about dividends, CapEx, and how hard to push short-term ROE."
 };
